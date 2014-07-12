@@ -3,7 +3,7 @@ require 'versioneye-core'
 namespace :versioneye do
 
   desc "execute the daily jobs"
-  task :daily_jobs => :environment do
+  task :daily_jobs do
     puts "START to update Indexes. Ensure that all indexes are existing."
     begin
       Indexer.create_indexes
@@ -60,7 +60,7 @@ namespace :versioneye do
   end
 
   desc "excute weekly jobs"
-  task :weekly_jobs => :environment do
+  task :weekly_jobs do
     puts "START to send out weekly project notification E-Mails."
     ProjectUpdateService.update_all( Project::A_PERIOD_WEEKLY )
     puts "---"
@@ -71,7 +71,7 @@ namespace :versioneye do
   end
 
   desc "excute monthly jobs"
-  task :monthly_jobs => :environment do
+  task :monthly_jobs do
     puts "START to send out monthly project notification emails."
     ProjectUpdateService.update_all( Project::A_PERIOD_MONTHLY )
     puts "---"
@@ -81,14 +81,14 @@ namespace :versioneye do
   # ***** Email Tasks *****
 
   desc "send out new version email notifications"
-  task :send_notifications => :environment do
+  task :send_notifications do
     puts "START to send out the notification E-Mails."
     NotificationService.send_notifications
     puts "---"
   end
 
   desc "send out verification reminders"
-  task :send_verification_reminders => :environment do
+  task :send_verification_reminders do
     puts "START to send out verification reminder E-Mails."
     User.send_verification_reminders
     puts "---"
@@ -105,16 +105,17 @@ namespace :versioneye do
   # ***** XML Sitemap Tasks *****
 
   desc "create XML site map"
-  task :xml_sitemap => :environment do
+  task :xml_sitemap do
     puts "START to export xml site map"
     ProductMigration.xml_site_map
     puts "---"
   end
 
+
   # ***** Admin tasks *****
 
   desc "init enterprise vm"
-  task :init_enterprise => :environment do
+  task :init_enterprise do
     puts "START to create default admin"
     AdminService.create_default_admin
     Plan.create_defaults
@@ -122,5 +123,15 @@ namespace :versioneye do
     EsUser.reset
     puts "---"
   end
+
+
+  # ***** Worker tasks *****
+
+  desc "start GithubRepoImportWorker"
+  task :github_repo_import_worker do
+    VersioneyeCore.new
+    GithubRepoImportWorker.new.work()
+  end
+
 
 end
