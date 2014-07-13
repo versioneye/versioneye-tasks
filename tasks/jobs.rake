@@ -127,6 +127,12 @@ namespace :versioneye do
 
   # ***** Worker tasks *****
 
+  desc "start GithubReposImportWorker"
+  task :github_repos_import_worker do
+    VersioneyeCore.new
+    GithubReposImportWorker.new.work()
+  end
+
   desc "start GithubRepoImportWorker"
   task :github_repo_import_worker do
     VersioneyeCore.new
