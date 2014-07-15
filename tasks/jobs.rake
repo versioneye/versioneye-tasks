@@ -4,6 +4,9 @@ namespace :versioneye do
 
   desc "execute the daily jobs"
   task :daily_jobs do
+
+    VersioneyeCore.new
+
     puts "START to update Indexes. Ensure that all indexes are existing."
     begin
       Indexer.create_indexes
@@ -61,6 +64,8 @@ namespace :versioneye do
 
   desc "excute weekly jobs"
   task :weekly_jobs do
+    VersioneyeCore.new
+
     puts "START to send out weekly project notification E-Mails."
     ProjectUpdateService.update_all( Project::A_PERIOD_WEEKLY )
     puts "---"
@@ -72,6 +77,8 @@ namespace :versioneye do
 
   desc "excute monthly jobs"
   task :monthly_jobs do
+    VersioneyeCore.new
+
     puts "START to send out monthly project notification emails."
     ProjectUpdateService.update_all( Project::A_PERIOD_MONTHLY )
     puts "---"
@@ -82,6 +89,8 @@ namespace :versioneye do
 
   desc "send out new version email notifications"
   task :send_notifications do
+    VersioneyeCore.new
+
     puts "START to send out the notification E-Mails."
     NotificationService.send_notifications
     puts "---"
@@ -89,6 +98,8 @@ namespace :versioneye do
 
   desc "send out verification reminders"
   task :send_verification_reminders do
+    VersioneyeCore.new
+
     puts "START to send out verification reminder E-Mails."
     User.send_verification_reminders
     puts "---"
@@ -96,6 +107,8 @@ namespace :versioneye do
 
   desc "send out suggestion emails to inactive users"
   task :send_suggestions do
+    VersioneyeCore.new
+
     puts "START to send out suggestion emails to inactive users"
     User.non_followers.each { |user| user.send_suggestions }
     puts "STOP  to send out suggestion emails to inactive users"
@@ -106,6 +119,8 @@ namespace :versioneye do
 
   desc "create XML site map"
   task :xml_sitemap do
+    VersioneyeCore.new
+
     puts "START to export xml site map"
     ProductMigration.xml_site_map
     puts "---"
@@ -116,6 +131,8 @@ namespace :versioneye do
 
   desc "init enterprise vm"
   task :init_enterprise do
+    VersioneyeCore.new
+
     puts "START to create default admin"
     AdminService.create_default_admin
     Plan.create_defaults
