@@ -156,5 +156,11 @@ namespace :versioneye do
     GithubRepoImportWorker.new.work()
   end
 
+  desc "start BitbucketReposImportWorker"
+  task :bitbucket_repos_import_worker do
+    VersioneyeCore.new
+    BitbucketReposImportWorker.new.work()
+  end
+
 
 end
