@@ -20,10 +20,6 @@ namespace :versioneye do
     SubmittedUrlService.update_integration_statuses()
     puts "---"
 
-    puts "START update meta data on products. Update followers, version and used_by_count"
-    ProductService.update_meta_data_global
-    puts "---"
-
     puts "START reindex newest products for elastic search"
     EsProduct.index_newest
     puts "---"
@@ -41,10 +37,6 @@ namespace :versioneye do
     NotificationService.send_notifications
     puts "---"
 
-    puts "START to send out daily project notification E-Mails."
-    ProjectUpdateService.update_all( Project::A_PERIOD_DAILY )
-    puts "---"
-
     puts "START to send out receipts "
     ReceiptService.process_receipts
     puts "---"
@@ -60,6 +52,10 @@ namespace :versioneye do
     puts "START to LanguageDailyStats.update_counts"
     LanguageDailyStats.update_counts(3, 1)
     puts "---"
+
+    puts "START to send out daily project notification E-Mails."
+    ProjectUpdateService.update_all( Project::A_PERIOD_DAILY )
+    puts "---"
   end
 
   desc "excute weekly jobs"
@@ -72,6 +68,10 @@ namespace :versioneye do
 
     puts "START to send out verification reminder E-Mails."
     User.send_verification_reminders
+    puts "---"
+
+    puts "START update meta data on products. Update followers, version and used_by_count"
+    ProductService.update_meta_data_global
     puts "---"
   end
 
