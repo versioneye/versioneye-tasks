@@ -1,9 +1,9 @@
 source "http://rubygems.org"
 
-gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v5.0.0'
+gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v5.0.2'
 # gem 'versioneye-core'    , :path => "~/workspace/versioneye/versioneye-core"
 
-gem 'bunny'                , '1.3.1'
+gem 'bunny', '~> 1.4.0'
 
 group :development do
   gem "shoulda"  , ">= 0"
