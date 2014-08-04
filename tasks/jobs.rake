@@ -56,6 +56,12 @@ namespace :versioneye do
     puts "START to send out daily project notification E-Mails."
     ProjectUpdateService.update_all( Project::A_PERIOD_DAILY )
     puts "---"
+
+    puts "START update meta data on products. Update followers, version and used_by_count"
+    ProductService.update_meta_data_global
+    puts "---"
+
+    Mongoid.default_session.disconnect
   end
 
   desc "excute weekly jobs"
@@ -70,9 +76,11 @@ namespace :versioneye do
     User.send_verification_reminders
     puts "---"
 
-    puts "START update meta data on products. Update followers, version and used_by_count"
-    ProductService.update_meta_data_global
+    puts "START to update dependencies."
+    ProductService.update_dependencies_global
     puts "---"
+
+    Mongoid.default_session.disconnect
   end
 
   desc "excute monthly jobs"
@@ -82,6 +90,8 @@ namespace :versioneye do
     puts "START to send out monthly project notification emails."
     ProjectUpdateService.update_all( Project::A_PERIOD_MONTHLY )
     puts "---"
+
+    Mongoid.default_session.disconnect
   end
 
 
