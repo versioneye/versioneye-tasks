@@ -137,6 +137,18 @@ namespace :versioneye do
   end
 
 
+  # ***** SPDX Import Tasks *****
+
+  desc "import SPDX license list"
+  task :spdx_import do
+    VersioneyeCore.new
+
+    puts "START to export xml site map"
+    LicenseService.import_from "/versioneye-tasks/data/spdx_license.csv"
+    puts "---"
+  end
+
+
   # ***** Admin tasks *****
 
   desc "init enterprise vm"
