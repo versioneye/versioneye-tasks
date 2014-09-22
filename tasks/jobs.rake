@@ -50,7 +50,7 @@ namespace :versioneye do
     puts "---"
 
     puts "START to LanguageDailyStats.update_counts"
-    LanguageDailyStats.update_counts(3, 1)
+    LanguageDailyStatsProducer.new "start"
     puts "---"
 
     puts "START to send out daily project notification E-Mails."
@@ -188,6 +188,12 @@ namespace :versioneye do
   task :bitbucket_repo_import_worker do
     VersioneyeCore.new
     BitbucketRepoImportWorker.new.work()
+  end
+
+  desc "start LanguageDailyStatsWorker"
+  task :language_daily_stats_worker do
+    VersioneyeCore.new
+    LanguageDailyStatsWorker.new.work()
   end
 
 
