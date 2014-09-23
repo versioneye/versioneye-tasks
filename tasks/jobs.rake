@@ -1,6 +1,93 @@
 require 'versioneye-core'
+require 'rufus-scheduler'
 
 namespace :versioneye do
+
+  desc "start scheduler"
+  task :scheduler do
+    VersioneyeCore.new
+    scheduler = Rufus::Scheduler.new
+
+
+    # -- Hourly Jobs -- #
+
+    scheduler.cron '6 * * * *' do
+      EsUser.reindex_all
+    end
+
+    scheduler.cron '7 * * * *' do
+      EsProduct.index_newest
+    end
+
+
+    # -- Daily Jobs -- #
+
+    scheduler.cron '1 1 * * *' do
+      Indexer.create_indexes
+    end
+
+    scheduler.cron '10 1 * * *' do
+      SubmittedUrlService.update_integration_statuses()
+    end
+
+    # scheduler.cron '20 1 * * *' do
+      # GitHubService.update_all_repos
+    # end
+
+    scheduler.cron '15 3 * * *' do
+      ReceiptService.process_receipts
+    end
+
+    scheduler.cron '25 3 * * *' do
+      UserService.update_languages
+    end
+
+    scheduler.cron '15 4 * * *' do
+      StatisticService.update_all
+    end
+
+    scheduler.cron '25 4 * * *' do
+      LanguageDailyStatsProducer.new "start"
+    end
+
+    scheduler.cron '15 8 * * *' do
+      NotificationService.send_notifications
+    end
+
+    scheduler.cron '15 9 * * *' do
+      ProjectUpdateProducer.new( Project::A_PERIOD_DAILY )
+    end
+
+    scheduler.cron '15 18 * * *' do
+      ProductService.update_meta_data_global
+    end
+
+
+    # -- Weekly Jobs -- #
+
+    scheduler.cron '15 11 * * 2' do
+      ProjectUpdateProducer.new( Project::A_PERIOD_WEEKLY )
+    end
+
+    scheduler.cron '15 12 * * 2' do
+      User.send_verification_reminders
+    end
+
+    scheduler.cron '1 12 * * 1' do
+      ProductService.update_dependencies_global
+    end
+
+
+    # -- Monthly Jobs -- #
+
+    scheduler.cron '1 11 1 * *' do
+      ProjectUpdateProducer.new( Project::A_PERIOD_MONTHLY )
+    end
+
+    scheduler.join
+  end
+
+
 
   desc "execute the daily jobs"
   task :daily_jobs do
@@ -25,8 +112,7 @@ namespace :versioneye do
     puts "---"
 
     puts "START reindex users for elastic search"
-    EsUser.reset
-    EsUser.index_all
+    EsUser.reindex_all
     puts "---"
 
     puts "START to update all github repos"
@@ -194,6 +280,12 @@ namespace :versioneye do
   task :language_daily_stats_worker do
     VersioneyeCore.new
     LanguageDailyStatsWorker.new.work()
+  end
+
+  desc "start ProjectUpdateWorker"
+  task :project_update_worker do
+    VersioneyeCore.new
+    ProjectUpdateWorker.new.work()
   end
 
 
