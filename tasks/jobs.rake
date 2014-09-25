@@ -59,7 +59,7 @@ namespace :versioneye do
     end
 
     scheduler.cron '15 18 * * *' do
-      ProductService.update_meta_data_global
+      UpdateMetaDataProducer.new "update"
     end
 
 
@@ -74,7 +74,7 @@ namespace :versioneye do
     end
 
     scheduler.cron '1 12 * * 1' do
-      ProductService.update_dependencies_global
+      UpdateDependenciesProducer.new "update"
     end
 
 
@@ -286,6 +286,18 @@ namespace :versioneye do
   task :project_update_worker do
     VersioneyeCore.new
     ProjectUpdateWorker.new.work()
+  end
+
+  desc "start UpdateMetaData"
+  task :update_meta_data_worker do
+    VersioneyeCore.new
+    UpdateMetaDataWorker.new.work()
+  end
+
+  desc "start UpdateDependencies"
+  task :update_dependencies_worker do
+    VersioneyeCore.new
+    UpdateDependenciesWorker.new.work()
   end
 
 
