@@ -85,6 +85,11 @@ namespace :versioneye do
     end
 
     scheduler.join
+
+    while 1 == 1
+      p "scheduler rake task is a alive"
+      sleep 30
+    end
   end
 
 
