@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 998a7d2991d02b0700234526289b9eac24bd9959
-  tag: v5.8.1
+  revision: a15cacae0cf41e9c5b1f733b262df1377b3024c5
+  tag: v5.9.0
   specs:
-    versioneye-core (5.8.1)
+    versioneye-core (5.9.0)
       actionmailer (~> 3.2.17)
       aws-sdk (~> 1.0)
       bunny (~> 1.4.0)
@@ -57,9 +57,9 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     builder (3.0.4)
-    bunny (1.4.0)
+    bunny (1.4.1)
       amq-protocol (>= 1.9.2)
-    cocoapods-core (0.34.0.rc2)
+    cocoapods-core (0.34.0)
       activesupport (>= 3.2.15)
       fuzzy_match (~> 2.0.4)
       json_pure (~> 1.8)
@@ -163,11 +163,11 @@ GEM
       shoulda-context (~> 1.0, >= 1.0.1)
       shoulda-matchers (>= 1.4.1, < 3.0)
     shoulda-context (1.2.1)
-    shoulda-matchers (2.6.2)
+    shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
-    simplecov (0.9.0)
+    simplecov (0.9.1)
       docile (~> 1.1.0)
-      multi_json
+      multi_json (~> 1.0)
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     sprockets (2.2.2)

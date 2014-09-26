@@ -11,12 +11,12 @@ namespace :versioneye do
 
     # -- Hourly Jobs -- #
 
-    scheduler.cron '6 * * * *' do
-      EsUser.reindex_all
+    scheduler.cron '5 * * * *' do
+      UpdateIndexProducer.new("user")
     end
 
     scheduler.cron '7 * * * *' do
-      EsProduct.index_newest
+      UpdateIndexProducer.new("product")
     end
 
 
@@ -298,6 +298,12 @@ namespace :versioneye do
   task :update_dependencies_worker do
     VersioneyeCore.new
     UpdateDependenciesWorker.new.work()
+  end
+
+  desc "start UpdateIndex"
+  task :update_index_worker do
+    VersioneyeCore.new
+    UpdateIndexWorker.new.work()
   end
 
 
