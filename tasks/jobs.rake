@@ -35,7 +35,7 @@ namespace :versioneye do
     # end
 
     scheduler.cron '15 3 * * *' do
-      ReceiptService.process_receipts
+      ProcessReceiptsProducer.new "receipts"
     end
 
     scheduler.cron '25 3 * * *' do
@@ -310,6 +310,12 @@ namespace :versioneye do
   task :update_send_notification_emails_worker do
     VersioneyeCore.new
     SendNotificationEmailsWorker.new.work()
+  end
+
+  desc "start ProcessReceiptsWorker "
+  task :process_receipts_worker do
+    VersioneyeCore.new
+    ProcessReceiptsWorker.new.work()
   end
 
 
