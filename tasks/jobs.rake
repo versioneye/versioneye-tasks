@@ -51,7 +51,7 @@ namespace :versioneye do
     end
 
     scheduler.cron '15 8 * * *' do
-      NotificationService.send_notifications
+      SendNotificationEmailsProducer.new "send"
     end
 
     scheduler.cron '15 9 * * *' do
@@ -304,6 +304,12 @@ namespace :versioneye do
   task :update_index_worker do
     VersioneyeCore.new
     UpdateIndexWorker.new.work()
+  end
+
+  desc "start SendNotificationEmailsWorker "
+  task :update_send_notification_emails_worker do
+    VersioneyeCore.new
+    SendNotificationEmailsWorker.new.work()
   end
 
 
