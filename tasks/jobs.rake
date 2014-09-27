@@ -35,7 +35,7 @@ namespace :versioneye do
     # end
 
     scheduler.cron '15 3 * * *' do
-      ProcessReceiptsProducer.new "receipts"
+      CommonProducer.new "process_receipts"
     end
 
     scheduler.cron '25 3 * * *' do
