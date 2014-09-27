@@ -23,11 +23,11 @@ namespace :versioneye do
     # -- Daily Jobs -- #
 
     scheduler.cron '1 1 * * *' do
-      Indexer.create_indexes
+      CommonProducer.new "create_indexes"
     end
 
     scheduler.cron '10 1 * * *' do
-      SubmittedUrlService.update_integration_statuses()
+      CommonProducer.new "update_integration_statuses"
     end
 
     # scheduler.cron '20 1 * * *' do
@@ -39,11 +39,11 @@ namespace :versioneye do
     end
 
     scheduler.cron '25 3 * * *' do
-      UserService.update_languages
+      CommonProducer.new "update_user_languages"
     end
 
     scheduler.cron '15 4 * * *' do
-      StatisticService.update_all
+      CommonProducer.new "update_statistic_data"
     end
 
     scheduler.cron '25 4 * * *' do
@@ -70,7 +70,7 @@ namespace :versioneye do
     end
 
     scheduler.cron '15 12 * * 2' do
-      User.send_verification_reminders
+      CommonProducer.new "send_verification_reminders"
     end
 
     scheduler.cron '1 12 * * 1' do
@@ -321,6 +321,12 @@ namespace :versioneye do
   task :process_receipts_worker do
     VersioneyeCore.new
     ProcessReceiptsWorker.new.work()
+  end
+
+  desc "start CommonWorker "
+  task :common_worker do
+    VersioneyeCore.new
+    CommonWorker.new.work()
   end
 
 

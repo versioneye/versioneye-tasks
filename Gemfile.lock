@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: d117597f0753f92b7fb7a456e2e8ef08b4d6c876
-  tag: v5.11.0
+  revision: a04c25dc5ff0538384b0d1478d2207f9e60c751a
+  tag: v5.12.0
   specs:
-    versioneye-core (5.11.0)
+    versioneye-core (5.12.0)
       actionmailer (~> 3.2.17)
       aws-sdk (~> 1.0)
       bunny (~> 1.4.0)
@@ -51,15 +51,15 @@ GEM
     addressable (2.3.6)
     amq-protocol (1.9.2)
     ansi (1.4.3)
-    aws-sdk (1.53.0)
-      aws-sdk-v1 (= 1.53.0)
-    aws-sdk-v1 (1.53.0)
+    aws-sdk (1.54.0)
+      aws-sdk-v1 (= 1.54.0)
+    aws-sdk-v1 (1.54.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     builder (3.0.4)
     bunny (1.4.1)
       amq-protocol (>= 1.9.2)
-    cocoapods-core (0.34.0)
+    cocoapods-core (0.34.1)
       activesupport (>= 3.2.15)
       fuzzy_match (~> 2.0.4)
       json_pure (~> 1.8)
