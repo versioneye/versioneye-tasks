@@ -50,11 +50,15 @@ namespace :versioneye do
       LanguageDailyStatsProducer.new "start"
     end
 
-    scheduler.cron '15 8 * * *' do
+    value = GlobalSetting.get(env, 'schedule_follow_notifications')
+    value = '15 8 * * *' if value.to_s.empty?
+    scheduler.cron value do
       SendNotificationEmailsProducer.new "send"
     end
 
-    scheduler.cron '15 9 * * *' do
+    value = GlobalSetting.get(env, 'schedule_project_notification_daily')
+    value = '15 9 * * *' if value.to_s.empty?
+    scheduler.cron value do
       ProjectUpdateProducer.new( Project::A_PERIOD_DAILY )
     end
 
@@ -65,7 +69,9 @@ namespace :versioneye do
 
     # -- Weekly Jobs -- #
 
-    scheduler.cron '15 11 * * 2' do
+    value = GlobalSetting.get(env, 'schedule_project_notification_weekly')
+    value = '15 11 * * 2' if value.to_s.empty?
+    scheduler.cron value do
       ProjectUpdateProducer.new( Project::A_PERIOD_WEEKLY )
     end
 
@@ -80,7 +86,9 @@ namespace :versioneye do
 
     # -- Monthly Jobs -- #
 
-    scheduler.cron '1 11 1 * *' do
+    value = GlobalSetting.get(env, 'schedule_project_notification_monthly')
+    value = '1 11 1 * *' if value.to_s.empty?
+    scheduler.cron value do
       ProjectUpdateProducer.new( Project::A_PERIOD_MONTHLY )
     end
 
@@ -90,99 +98,6 @@ namespace :versioneye do
       p "scheduler rake task is a alive"
       sleep 30
     end
-  end
-
-
-
-  desc "execute the daily jobs"
-  task :daily_jobs do
-
-    VersioneyeCore.new
-
-    puts "START to update Indexes. Ensure that all indexes are existing."
-    begin
-      Indexer.create_indexes
-    rescue => e
-      p e.message
-      p e.backtrace.join("\n")
-    end
-    puts "---"
-
-    puts "START to update integration status of submitted urls"
-    SubmittedUrlService.update_integration_statuses()
-    puts "---"
-
-    puts "START reindex newest products for elastic search"
-    EsProduct.index_newest
-    puts "---"
-
-    puts "START reindex users for elastic search"
-    EsUser.reindex_all
-    puts "---"
-
-    puts "START to update all github repos"
-    GitHubService.update_all_repos
-    puts "---"
-
-    puts "START to send out the notification E-Mails."
-    NotificationService.send_notifications
-    puts "---"
-
-    puts "START to send out receipts "
-    ReceiptService.process_receipts
-    puts "---"
-
-    puts "START to update all user languages"
-    UserService.update_languages
-    puts "---"
-
-    puts "START to update the json strings for the statistic page."
-    StatisticService.update_all
-    puts "---"
-
-    puts "START to LanguageDailyStats.update_counts"
-    LanguageDailyStatsProducer.new "start"
-    puts "---"
-
-    puts "START to send out daily project notification E-Mails."
-    ProjectUpdateService.update_all( Project::A_PERIOD_DAILY )
-    puts "---"
-
-    puts "START update meta data on products. Update followers, version and used_by_count"
-    ProductService.update_meta_data_global
-    puts "---"
-
-    Mongoid.default_session.disconnect
-  end
-
-  desc "excute weekly jobs"
-  task :weekly_jobs do
-    VersioneyeCore.new
-
-    puts "START to send out weekly project notification E-Mails."
-    ProjectUpdateService.update_all( Project::A_PERIOD_WEEKLY )
-    puts "---"
-
-    puts "START to send out verification reminder E-Mails."
-    User.send_verification_reminders
-    puts "---"
-
-    puts "START to update dependencies."
-    ProductService.update_dependencies_global
-    puts "---"
-
-    Mongoid.default_session.disconnect
-  end
-
-  desc "excute monthly jobs"
-  task :monthly_jobs do
-    VersioneyeCore.new
-
-    puts "START to send out monthly project notification emails."
-    ProjectUpdateService.update_all( Project::A_PERIOD_MONTHLY )
-    puts "---"
-
-    Mongoid.default_session.disconnect
   end
 
 
