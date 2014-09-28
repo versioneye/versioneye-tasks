@@ -251,6 +251,7 @@ namespace :versioneye do
     Plan.create_defaults
     EsProduct.reset
     EsUser.reset
+    MavenRepository.fill_it
     puts "---"
   end
 

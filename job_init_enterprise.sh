@@ -1,3 +1,4 @@
 #!/bin/bash
 
-/bin/bash -l -c 'cd /versioneye-tasks; /usr/local/bin/bundle exec rake versioneye:init_enterprise --silent'
+/bin/bash -l -c 'cd /versioneye-tasks; /usr/local/bin/bundle exec rake versioneye:init_enterprise'
+/bin/bash -l -c 'cd /versioneye-tasks; /usr/local/bin/bundle exec rake versioneye:spdx_import'
