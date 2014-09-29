@@ -6,6 +6,7 @@ namespace :versioneye do
   desc "start scheduler"
   task :scheduler do
     VersioneyeCore.new
+    env = Settings.instance.environment
     scheduler = Rufus::Scheduler.new
 
 
