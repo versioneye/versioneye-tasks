@@ -101,6 +101,23 @@ namespace :versioneye do
   end
 
 
+  desc "start scheduler"
+  task :j_scheduler do
+    VersioneyeCore.new
+    scheduler = Rufus::Scheduler.new
+
+    env = Settings.instance.environment
+    value = GlobalSetting.get(env, 'mvn_repo_1_schedule')
+    if !value.to_s.empty?
+      scheduler.cron value do
+        system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory")
+      end
+    end
+
+    scheduler.join
+  end
+
+
   # ***** Email Tasks *****
 
   desc "send out new version email notifications"
