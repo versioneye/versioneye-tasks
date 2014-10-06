@@ -192,28 +192,16 @@ namespace :versioneye do
 
   # ***** Worker tasks *****
 
-  desc "start GithubReposImportWorker"
-  task :github_repos_import_worker do
+  desc "start GitReposImportWorker"
+  task :git_repos_import_worker do
     VersioneyeCore.new
-    GithubReposImportWorker.new.work()
+    GitReposImportWorker.new.work()
   end
 
-  desc "start GithubRepoImportWorker"
-  task :github_repo_import_worker do
+  desc "start GitRepoImportWorker"
+  task :git_repo_import_worker do
     VersioneyeCore.new
-    GithubRepoImportWorker.new.work()
-  end
-
-  desc "start BitbucketReposImportWorker"
-  task :bitbucket_repos_import_worker do
-    VersioneyeCore.new
-    BitbucketReposImportWorker.new.work()
-  end
-
-  desc "start BitbucketRepoImportWorker"
-  task :bitbucket_repo_import_worker do
-    VersioneyeCore.new
-    BitbucketRepoImportWorker.new.work()
+    GitRepoImportWorker.new.work()
   end
 
   desc "start LanguageDailyStatsWorker"
