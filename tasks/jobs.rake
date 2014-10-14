@@ -112,7 +112,7 @@ namespace :versioneye do
     if !value.to_s.empty?
       scheduler.cron value do
         MavenRepository.fill_it
-        system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory")
+        system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
       end
     end
 
