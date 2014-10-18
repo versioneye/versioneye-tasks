@@ -253,4 +253,11 @@ namespace :versioneye do
   end
 
 
+  desc "start SyncWorker "
+  task :sync_worker do
+    VersioneyeCore.new
+    SyncWorker.new.work()
+  end
+
+
 end
