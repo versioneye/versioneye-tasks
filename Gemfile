@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v6.5.0'
+gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v6.5.1'
 # gem 'versioneye-core'    , :path => "~/workspace/versioneye/versioneye-core"
 
 gem 'bunny', '~> 1.4.0'
