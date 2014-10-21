@@ -67,6 +67,12 @@ namespace :versioneye do
       UpdateMetaDataProducer.new "update"
     end
 
+    value = GlobalSetting.get(env, 'sync_db')
+    if !value.to_s.empty? && env.eql?('enterprise')
+      scheduler.cron value do
+        SyncService.sync_all_products
+      end
+    end
 
     # -- Weekly Jobs -- #
 
@@ -102,7 +108,7 @@ namespace :versioneye do
   end
 
 
-  desc "start scheduler"
+  desc "start java scheduler"
   task :j_scheduler do
     VersioneyeCore.new
     scheduler = Rufus::Scheduler.new
