@@ -70,7 +70,7 @@ namespace :versioneye do
     value = GlobalSetting.get(env, 'sync_db')
     if !value.to_s.empty? && env.eql?('enterprise')
       scheduler.cron value do
-        SyncService.sync_all_products
+        SyncProducer.new "all_products"
       end
     end
 
