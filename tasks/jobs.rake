@@ -241,7 +241,7 @@ namespace :versioneye do
   end
 
   desc "start SendNotificationEmailsWorker "
-  task :update_send_notification_emails_worker do
+  task :send_notification_emails_worker do
     VersioneyeCore.new
     SendNotificationEmailsWorker.new.work()
   end
