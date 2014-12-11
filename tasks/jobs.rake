@@ -31,10 +31,6 @@ namespace :versioneye do
       CommonProducer.new "update_integration_statuses"
     end
 
-    # scheduler.cron '20 1 * * *' do
-      # GitHubService.update_all_repos
-    # end
-
     scheduler.cron '15 3 * * *' do
       CommonProducer.new "process_receipts"
     end
@@ -208,6 +204,12 @@ namespace :versioneye do
   task :git_repo_import_worker do
     VersioneyeCore.new
     GitRepoImportWorker.new.work()
+  end
+
+  desc "start GitRepoFileImportWorker"
+  task :git_repo_file_import_worker do
+    VersioneyeCore.new
+    GitRepoFileImportWorker.new.work()
   end
 
   desc "start LanguageDailyStatsWorker"
