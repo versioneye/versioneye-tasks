@@ -1,13 +1,13 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: c6da104befeebcf44d11423cbb25ef746dea37f3
-  tag: v7.0.4
+  revision: 1838ca71ba5129a8c4fe83516c3e1f6543022939
+  tag: v7.0.7
   specs:
-    versioneye-core (7.0.4)
+    versioneye-core (7.0.7)
       actionmailer (~> 3.2.17)
       aws-sdk (~> 1.0)
       bundler (~> 1.7.9)
-      bunny (~> 1.6.0)
+      bunny (~> 1.6.3)
       cocoapods-core (~> 0.35.0)
       dalli (~> 2.7.0)
       httparty (~> 0.13.1)
@@ -189,7 +189,6 @@ GEM
       rake
       rest-client (~> 1.6)
     treetop (1.4.15)
-      polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.42)
     will_paginate (3.0.7)
