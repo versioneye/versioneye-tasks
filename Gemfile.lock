@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 99e571639535b69987ac447f8c5ca6755cd8e1cc
-  tag: v7.0.9
+  revision: c6ef2d0c06440996678442589162faabc91f3619
+  tag: v7.0.10
   specs:
-    versioneye-core (7.0.9)
+    versioneye-core (7.0.10)
       actionmailer (~> 3.2.17)
       aws-sdk (~> 1.0)
       bundler (~> 1.7.11)
@@ -103,7 +103,7 @@ GEM
     journey (1.0.4)
     json (1.8.1)
     jwt (1.2.0)
-    kgio (2.9.2)
+    kgio (2.9.3)
     log4r (1.1.10)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -144,7 +144,7 @@ GEM
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
     rdoc (3.12.2)
