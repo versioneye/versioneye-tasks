@@ -82,7 +82,9 @@ namespace :versioneye do
       CommonProducer.new "send_verification_reminders"
     end
 
-    scheduler.cron '1 12 * * 1' do
+    # Start Sunday morning 1 min. after midnight! 
+    # This takes some time and should be done on weekends! 
+    scheduler.cron '1 0 * * 0' do
       UpdateDependenciesProducer.new "update"
     end
 
@@ -192,7 +194,7 @@ namespace :versioneye do
   end
 
 
-  # ***** Worker tasks *****
+  # ***** Git Worker tasks *****
 
   desc "start GitReposImportWorker"
   task :git_repos_import_worker do
@@ -211,6 +213,9 @@ namespace :versioneye do
     VersioneyeCore.new
     GitRepoFileImportWorker.new.work()
   end
+
+
+  # ***** Common Worker tasks *****
 
   desc "start LanguageDailyStatsWorker"
   task :language_daily_stats_worker do
