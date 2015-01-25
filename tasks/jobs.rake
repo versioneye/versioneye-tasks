@@ -82,12 +82,6 @@ namespace :versioneye do
       CommonProducer.new "send_verification_reminders"
     end
 
-    # Start Sunday morning 1 min. after midnight! 
-    # This takes some time and should be done on weekends! 
-    scheduler.cron '1 0 * * 0' do
-      UpdateDependenciesProducer.new "update"
-    end
-
 
     # -- Monthly Jobs -- #
 
@@ -194,6 +188,15 @@ namespace :versioneye do
   end
 
 
+  # ***** NewestPostProcessor *****
+
+  desc "start Newest Post Processor"
+  task :newest_post_processor_worker do
+    VersioneyeCore.new
+    NewestService.run_worker()
+  end
+
+
   # ***** Git Worker tasks *****
 
   desc "start GitReposImportWorker"
@@ -233,12 +236,6 @@ namespace :versioneye do
   task :update_meta_data_worker do
     VersioneyeCore.new
     UpdateMetaDataWorker.new.work()
-  end
-
-  desc "start UpdateDependencies"
-  task :update_dependencies_worker do
-    VersioneyeCore.new
-    UpdateDependenciesWorker.new.work()
   end
 
   desc "start UpdateIndex"
