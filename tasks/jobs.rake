@@ -101,7 +101,7 @@ namespace :versioneye do
 
 
   desc "start java scheduler"
-  task :j_scheduler do
+  task :j_scheduler_enterprise do
     VersioneyeCore.new
     scheduler = Rufus::Scheduler.new
 
