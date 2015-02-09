@@ -115,6 +115,8 @@ namespace :versioneye do
           system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
         elsif crawler.to_s.eql?('maven_index')
           system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:repo1index >> /mnt/logs/crawlj.log")
+        elsif crawler.to_s.eql?('html')
+          system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:repo1html >> /mnt/logs/crawlj.log")
         end
       end
     end
