@@ -110,7 +110,12 @@ namespace :versioneye do
     if !value.to_s.empty?
       scheduler.cron value do
         MavenRepository.fill_it
-        system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
+        crawler = GlobalSetting.get(env, 'mvn_repo_1_type')
+        if crawler.to_s.eql?('artifactory')
+          system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
+        elsif crawler.to_s.eql?('maven_index')
+          system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:repo1index >> /mnt/logs/crawlj.log")
+        end
       end
     end
 
