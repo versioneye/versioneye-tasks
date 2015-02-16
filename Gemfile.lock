@@ -1,12 +1,12 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 9c209ec4c91f4ad0321422f125a22fc233be991a
-  tag: v7.3.6
+  revision: 6de3db0e8058f67e57fde2269997b52496de0f11
+  tag: v7.3.11
   specs:
-    versioneye-core (7.3.6)
-      actionmailer (~> 3.2.17)
+    versioneye-core (7.3.11)
+      actionmailer (~> 3.2.21)
       aws-sdk (~> 1.0)
-      bundler (~> 1.8.0)
+      bundler (~> 1.8.2)
       bunny (~> 1.7.0)
       cocoapods-core (~> 0.35.0)
       dalli (~> 2.7.0)
@@ -14,7 +14,7 @@ GIT
       json (~> 1.8.0)
       kgio (~> 2.9.0)
       log4r (~> 1.1.0)
-      mongoid (~> 3.1.0)
+      mongoid (~> 3.1.6)
       naturalsorter (~> 3.0.1)
       nokogiri (~> 1.6.0)
       oauth (~> 0.4.7)
