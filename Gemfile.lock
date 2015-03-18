@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 023bd9cd1c175f387e5a860f5678bb2a75438865
-  tag: v7.6.0
+  revision: d0a089e79730e41c26345c150d78aaf473c090ea
+  tag: v7.6.5
   specs:
-    versioneye-core (7.6.0)
+    versioneye-core (7.6.5)
       actionmailer (~> 3.2.21)
       aws-sdk (~> 1.0)
       bundler (~> 1.8.2)
@@ -64,7 +64,7 @@ GEM
       activesupport (>= 3.2.15)
       fuzzy_match (~> 2.0.4)
       nap (~> 0.8.0)
-    dalli (2.7.3)
+    dalli (2.7.4)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
