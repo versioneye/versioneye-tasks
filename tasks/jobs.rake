@@ -27,13 +27,21 @@ namespace :versioneye do
       CommonProducer.new "create_indexes"
     end
 
+    if env.eql?('enterprise')
+      scheduler.cron '5 1 * * *' do
+        CommonProducer.new "update_smc_meta_data_all"
+      end
+    end
+
     scheduler.cron '10 1 * * *' do
       CommonProducer.new "update_integration_statuses"
     end
 
-    scheduler.cron '15 3 * * *' do
-      CommonProducer.new "process_receipts"
-    end
+    if env.eql?('production')
+      scheduler.cron '15 3 * * *' do
+        CommonProducer.new "process_receipts"
+      end
+    end 
 
     scheduler.cron '25 3 * * *' do
       CommonProducer.new "update_user_languages"
