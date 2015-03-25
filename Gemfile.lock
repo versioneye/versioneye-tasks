@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: fc765d01bc071b521d970c67e1d13a4d0cd559d9
-  tag: v7.7.1
+  revision: c489b2b3d86da1e0ecda147e805ed94392f6ef54
+  tag: v7.7.2
   specs:
-    versioneye-core (7.7.1)
+    versioneye-core (7.7.2)
       actionmailer (~> 3.2.21)
       aws-sdk (~> 2.0.31)
       bundler (~> 1.9.1)
@@ -52,15 +52,15 @@ GEM
     addressable (2.3.7)
     amq-protocol (1.9.2)
     ansi (1.5.0)
-    aws-sdk (2.0.31)
-      aws-sdk-resources (= 2.0.31)
-    aws-sdk-core (2.0.31)
+    aws-sdk (2.0.32)
+      aws-sdk-resources (= 2.0.32)
+    aws-sdk-core (2.0.32)
       builder (~> 3.0)
       jmespath (~> 1.0)
       multi_json (~> 1.0)
       multi_xml (~> 0.5)
-    aws-sdk-resources (2.0.31)
-      aws-sdk-core (= 2.0.31)
+    aws-sdk-resources (2.0.32)
+      aws-sdk-core (= 2.0.32)
     builder (3.0.4)
     bunny (1.7.0)
       amq-protocol (>= 1.9.2)
@@ -72,6 +72,8 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
+    domain_name (0.5.23)
+      unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
@@ -91,6 +93,8 @@ GEM
     hashr (0.0.22)
     highline (1.7.1)
     hike (1.2.3)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -155,7 +159,8 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    rest-client (1.7.3)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rufus-scheduler (3.0.9)
@@ -198,6 +203,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.43)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.6)
     will_paginate (3.0.7)
     will_paginate_mongoid (2.0.1)
       mongoid
