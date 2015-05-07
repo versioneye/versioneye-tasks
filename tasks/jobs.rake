@@ -90,6 +90,10 @@ namespace :versioneye do
       CommonProducer.new "send_verification_reminders"
     end
 
+    scheduler.cron '21 12 * * 2' do
+      CommonProducer.new "update_distinct_languages"
+    end
+
 
     # -- Monthly Jobs -- #
 
