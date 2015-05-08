@@ -1,14 +1,14 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 8af95520795f583632c3e2c151ab846bb6151941
-  tag: v7.9.2
+  revision: 0329df56fa147afed57d3af102d4712abf208cfa
+  tag: v7.9.4
   specs:
-    versioneye-core (7.9.2)
+    versioneye-core (7.9.4)
       actionmailer (~> 3.2.21)
       aws-sdk (~> 2.0.31)
       bundler (~> 1.9.1)
       bunny (~> 1.7.0)
-      cocoapods-core (~> 0.36.0)
+      cocoapods-core (~> 0.37.1)
       dalli (~> 2.7.0)
       httparty (~> 0.13.1)
       json (~> 1.8.0)
@@ -52,18 +52,18 @@ GEM
     addressable (2.3.8)
     amq-protocol (1.9.2)
     ansi (1.5.0)
-    aws-sdk (2.0.41)
-      aws-sdk-resources (= 2.0.41)
-    aws-sdk-core (2.0.41)
+    aws-sdk (2.0.42)
+      aws-sdk-resources (= 2.0.42)
+    aws-sdk-core (2.0.42)
       builder (~> 3.0)
       jmespath (~> 1.0)
       multi_json (~> 1.0)
-    aws-sdk-resources (2.0.41)
-      aws-sdk-core (= 2.0.41)
+    aws-sdk-resources (2.0.42)
+      aws-sdk-core (= 2.0.42)
     builder (3.0.4)
     bunny (1.7.0)
       amq-protocol (>= 1.9.2)
-    cocoapods-core (0.36.4)
+    cocoapods-core (0.37.1)
       activesupport (>= 3.2.15)
       fuzzy_match (~> 2.0.4)
       nap (~> 0.8.0)
