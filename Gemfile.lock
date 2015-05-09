@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 0329df56fa147afed57d3af102d4712abf208cfa
-  tag: v7.9.4
+  revision: 8b012557130e184bcdf85335a92035c596291281
+  tag: v7.9.5
   specs:
-    versioneye-core (7.9.4)
+    versioneye-core (7.9.5)
       actionmailer (~> 3.2.21)
       aws-sdk (~> 2.0.31)
       bundler (~> 1.9.1)
@@ -111,7 +111,7 @@ GEM
       multi_json (~> 1.0)
     journey (1.0.4)
     json (1.8.2)
-    jwt (1.4.1)
+    jwt (1.5.0)
     kgio (2.9.3)
     log4r (1.1.10)
     mail (2.5.4)
