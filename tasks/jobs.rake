@@ -281,6 +281,14 @@ namespace :versioneye do
     CommonWorker.new.work()
   end
 
+  desc "start DepdencyBadgeWorker "
+  task :dependency_badge_worker do
+    VersioneyeCore.new
+    DependencyBadgeWorker.new.work()
+  end
+
+  
+
 
   desc "start SyncWorker "
   task :sync_worker do
