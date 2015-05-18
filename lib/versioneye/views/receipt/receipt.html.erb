@@ -60,6 +60,9 @@
         text-align: center;
         padding: 7px;
       }
+      td {
+        font-size: 11px;
+      }
     </style>
   </head>
   <body>
@@ -98,30 +101,51 @@
         This is a receipt for your monthly VersionEye subscription.
       </p>
 
-      <table class="list">
+      <table class="list" >
         <thead>
           <tr>
             <td class="left">Date</td>
-            <td class="left">Plan</td>
+            <td class="left">Description</td>
             <td class="right">Price</td>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="left"><%= invoice_date.strftime("%b %d, %Y") %></td>
-            <td class="left"><%= plan_name %></td>
-            <td class="right">
+          <% receipt_lines.each do |line| %>
+            <tr>
+              <td class="left">
+                <%= line.period_start.strftime("%b %d, %Y") %>  
+                <% if !line.period_start.to_s.eql?(line.period_end.to_s) %>
+                  to <br/>
+                  <%= line.period_end.strftime("%b %d, %Y") %>
+                <% end %> 
+              </td>
+              <td class="left"><%= line.description %></td>
+              <td class="right">
+                <%= (sprintf("%.2f", (line.amount.to_f / 100.0) )).gsub(".", ",") %> <%= currency.upcase %>
+              </td>
+            </tr>
+          <% end %> 
+          <tr >
+            <td class="left">
+              <%= period_start.strftime("%b %d, %Y") %>  
+              <% if !period_start.to_s.eql?(period_end.to_s) %>
+                to <br/>
+                <%= period_end.strftime("%b %d, %Y") %>
+              <% end %> 
+            </td>
+            <td class="left"></td>
+            <td class="right" style="font-weight: bold; border-top: 2px solid black">
               <% if taxable %>
-                Price:           <%= sprintf("%.2f", (amount.to_i / 100 * 0.81) ) %> <%= currency.upcase %><br/>
-                Tax (19% Mwst.): <%= sprintf("%.2f", (amount.to_i / 100 * 0.19) ) %> <%= currency.upcase %><br/>
-                Total:           <%= sprintf("%.2f", (amount.to_i / 100       ) ) %> <%= currency.upcase %>
+                Price:           <%= sprintf("%.2f", (total.to_f / 100 * 0.81) ).gsub(".", ",") %> <%= currency.upcase %><br/>
+                Tax (19% Mwst.): <%= sprintf("%.2f", (total.to_f / 100 * 0.19) ).gsub(".", ",") %> <%= currency.upcase %><br/>
+                Total:           <%= sprintf("%.2f", (total.to_f / 100       ) ).gsub(".", ",") %> <%= currency.upcase %>
               <% else %>
-                <%= sprintf("%.2f", (amount.to_i / 100) ) %> <%= currency.upcase %>
+                <%= (sprintf("%.2f", (total.to_f / 100.0) )).gsub(".", ",").gsub(".", ",") %> <%= currency.upcase %>
               <% end %>
             </td>
           </tr>
         </tbody>
-      </table>
+      </table>      
 
       <p>
         If you have any questions, please contact us anytime at
