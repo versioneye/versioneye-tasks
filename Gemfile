@@ -1,10 +1,10 @@
 source "http://rubygems.org"
 
-gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v7.10.14'
+gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :tag => 'v7.11.0'
 # gem 'versioneye-core'    , :path => "~/workspace/versioneye/versioneye-core"
 
 gem 'bunny', '~> 1.7.0'
-gem 'rufus-scheduler', '3.1.1'
+gem 'rufus-scheduler', '3.1.2'
 
 group :development do
   gem "shoulda"  , ">= 0"

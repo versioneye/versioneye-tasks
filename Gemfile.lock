@@ -1,12 +1,11 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 648565839c52ed80cb94e806b1facda918c8a3f6
-  tag: v7.10.14
+  revision: ef88615024f17b073eca477f9e9878a4b54f40c4
+  tag: v7.11.0
   specs:
-    versioneye-core (7.10.14)
+    versioneye-core (7.11.0)
       actionmailer (~> 4.2.1)
-      aws-sdk (~> 2.0.31)
-      bson (~> 2.3.0)
+      aws-sdk (~> 2.0.45)
       bundler (~> 1.9.1)
       bunny (~> 1.7.0)
       cocoapods-core (~> 0.37.1)
@@ -16,7 +15,6 @@ GIT
       kgio (~> 2.9.0)
       log4r (~> 1.1.0)
       mongoid (~> 4.0.2)
-      moped (~> 2.0.0)
       naturalsorter (~> 3.0.6)
       nokogiri (~> 1.6.0)
       oauth (~> 0.4.7)
@@ -24,7 +22,7 @@ GIT
       pdfkit (~> 0.7.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.14.0)
+      stripe (~> 1.21.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -66,14 +64,14 @@ GEM
     addressable (2.3.8)
     amq-protocol (1.9.2)
     ansi (1.5.0)
-    aws-sdk (2.0.44)
-      aws-sdk-resources (= 2.0.44)
-    aws-sdk-core (2.0.44)
+    aws-sdk (2.0.45)
+      aws-sdk-resources (= 2.0.45)
+    aws-sdk-core (2.0.45)
       builder (~> 3.0)
       jmespath (~> 1.0)
       multi_json (~> 1.0)
-    aws-sdk-resources (2.0.44)
-      aws-sdk-core (= 2.0.44)
+    aws-sdk-resources (2.0.45)
+      aws-sdk-core (= 2.0.45)
     bson (2.3.0)
     builder (3.2.2)
     bunny (1.7.0)
@@ -134,7 +132,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (1.25.1)
+    mime-types (2.5)
     mini_portile (0.6.2)
     minitest (5.6.1)
     mongoid (4.0.2)
@@ -189,7 +187,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rufus-scheduler (3.1.1)
+    rufus-scheduler (3.1.2)
     sawyer (0.6.0)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
@@ -205,9 +203,8 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.14.0)
+    stripe (1.21.0)
       json (~> 1.8.1)
-      mime-types (~> 1.25)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
     tire (0.6.2)
@@ -236,7 +233,7 @@ DEPENDENCIES
   bundler (~> 1.0)
   bunny (~> 1.7.0)
   jeweler (~> 2.0.1)
-  rufus-scheduler (= 3.1.1)
+  rufus-scheduler (= 3.1.2)
   shoulda
   simplecov
   versioneye-core!
