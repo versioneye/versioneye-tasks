@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 07ee4e1ebc13f37a7731c8128b9639d7e02aaa2d
-  tag: v7.12.1
+  revision: 620e786c30f89e70e4a719a6e2cb961121d7cb55
+  tag: v7.12.2
   specs:
-    versioneye-core (7.12.1)
+    versioneye-core (7.12.2)
       actionmailer (~> 4.2.1)
       aws-sdk (~> 2.0.45)
       bundler (~> 1.9.1)
@@ -132,7 +132,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.5)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.6.1)
     mongoid (4.0.2)
