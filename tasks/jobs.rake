@@ -123,7 +123,7 @@ namespace :versioneye do
       scheduler.cron value do
         MavenRepository.fill_it
         crawler = GlobalSetting.get(env, 'mvn_repo_1_type')
-        system("/user/bin/printenv >> /mnt/logs/crawlj.log")
+        system("/usr/bin/printenv >> /mnt/logs/crawlj.log")
         if crawler.to_s.eql?('artifactory')
           system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
         elsif crawler.to_s.eql?('maven_index')
