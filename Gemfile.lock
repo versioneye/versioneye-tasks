@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 6f2e15323c1eba2ac41f788dba05a2637076e7e3
-  tag: v7.16.4
+  revision: 7549408e3cdaa3db27e198e6c211052de47e6533
+  tag: v7.16.6
   specs:
-    versioneye-core (7.16.4)
+    versioneye-core (7.16.6)
       actionmailer (~> 4.2.1)
       aws-sdk (~> 2.0.45)
       bundler (~> 1.10.2)
@@ -22,7 +22,7 @@ GIT
       pdfkit (~> 0.7.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.21.0)
+      stripe (~> 1.22.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -202,7 +202,7 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.21.0)
+    stripe (1.22.0)
       json (~> 1.8.1)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
