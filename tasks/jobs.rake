@@ -127,7 +127,7 @@ namespace :versioneye do
         if crawler.to_s.eql?('artifactory')
           system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:artifactory >> /mnt/logs/crawlj.log")
         elsif crawler.to_s.eql?('maven_index')
-          system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:repo1index >> /mnt/logs/crawlj.log")
+          system("M2=/opt/apache-maven-3.0.5/bin && M2_HOME=/opt/apache-maven-3.0.5 && /opt/apache-maven-3.0.5/bin/mvn -f /mnt/maven-indexer/pom.xml crawl:repo1index >> /mnt/logs/crawlj.log")
         elsif crawler.to_s.eql?('html')
           system("/opt/mvn/bin/mvn -f /mnt/crawl_j/versioneye_maven_crawler/pom.xml crawl:repo1html >> /mnt/logs/crawlj.log")
         end
