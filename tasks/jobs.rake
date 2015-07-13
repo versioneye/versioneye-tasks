@@ -191,6 +191,18 @@ namespace :versioneye do
     puts "---"
   end
 
+  
+  # ***** Seeburger Import Tasks *****
+
+  desc "import Seeburger license list"
+  task :seeburger_import do
+    VersioneyeCore.new
+
+    puts "START to seeburger license.properties"
+    LicenseService.import_from_properties_file "data/license.properties"
+    puts "---"
+  end
+
 
   # ***** Admin tasks *****
 
