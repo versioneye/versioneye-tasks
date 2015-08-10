@@ -1,0 +1,653 @@
+=>[ERROR 2015-06-11 10:25:51] MainLogger: Could not connect to a primary node for replica set #<Moped::Cluster:70266132402140 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]> [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye-core.rb:44:in `rescue in init_email']
+=>[ERROR 2015-06-11 10:25:51] MainLogger: /Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/cluster.rb:254:in `with_primary'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/read_preference/primary.rb:55:in `block in with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/retryable.rb:30:in `call'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/retryable.rb:30:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/read_preference/primary.rb:54:in `with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.5/lib/moped/query.rb:128:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/findable.rb:144:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye/services/email_setting_service.rb:4:in `email_setting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye/services/email_setting_service.rb:10:in `update_action_mailer_from_db'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye-core.rb:42:in `init_email'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye-core.rb:23:in `initialize'
+(irb):2:in `new'
+(irb):2:in `irb_binding'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `eval'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/context.rb:379:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:489:in `block (2 levels) in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:623:in `signal_status'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:486:in `block in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:245:in `block (2 levels) in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `loop'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `block in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:485:in `eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:395:in `block in start'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `start'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/jeweler-2.0.1/lib/jeweler/tasks.rb:231:in `block in define'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `call'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `block in execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:165:in `invoke'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:150:in `invoke_task'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:115:in `run_with_threads'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:100:in `top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:78:in `block in run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:176:in `standard_exception_handling'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:75:in `run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/bin/rake:33:in `<main>' [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-feb23a5849ba/lib/versioneye-core.rb:45:in `rescue in init_email']
+=>[ERROR 2015-06-15 09:57:47] MainLogger: Could not connect to a primary node for replica set #<Moped::Cluster:70278274180160 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">, <Moped::Node resolved_address="127.0.0.1:27017">, <Moped::Node resolved_address="127.0.0.1:27017">]> [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye-core.rb:44:in `rescue in init_email']
+=>[ERROR 2015-06-15 09:57:47] MainLogger: /Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/cluster.rb:254:in `with_primary'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:55:in `block in with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `call'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:54:in `with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/query.rb:128:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/findable.rb:144:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye/services/email_setting_service.rb:4:in `email_setting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye/services/email_setting_service.rb:10:in `update_action_mailer_from_db'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye-core.rb:42:in `init_email'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye-core.rb:23:in `initialize'
+/Users/reiz/workspace/versioneye/versioneye-tasks/tasks/jobs.rake:230:in `new'
+/Users/reiz/workspace/versioneye/versioneye-tasks/tasks/jobs.rake:230:in `block (2 levels) in <top (required)>'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `call'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `block in execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:165:in `invoke'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:150:in `invoke_task'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:115:in `run_with_threads'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:100:in `top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:78:in `block in run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:176:in `standard_exception_handling'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:75:in `run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/bin/rake:33:in `<main>' [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-8a0f0c4d7235/lib/versioneye-core.rb:45:in `rescue in init_email']
+=>[ERROR 2015-06-15 09:59:16] MainLogger: Could not connect to a primary node for replica set #<Moped::Cluster:70263668926240 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]> [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye-core.rb:44:in `rescue in init_email']
+=>[ERROR 2015-06-15 09:59:16] MainLogger: /Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/cluster.rb:254:in `with_primary'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:55:in `block in with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `call'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:54:in `with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/moped-2.0.6/lib/moped/query.rb:128:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/gems/mongoid-4.0.2/lib/mongoid/findable.rb:144:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye/services/email_setting_service.rb:4:in `email_setting'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye/services/email_setting_service.rb:10:in `update_action_mailer_from_db'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye-core.rb:42:in `init_email'
+/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye-core.rb:23:in `initialize'
+/Users/reiz/workspace/versioneye/versioneye-tasks/tasks/jobs.rake:230:in `new'
+/Users/reiz/workspace/versioneye/versioneye-tasks/tasks/jobs.rake:230:in `block (2 levels) in <top (required)>'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `call'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `block in execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:165:in `invoke'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:150:in `invoke_task'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:115:in `run_with_threads'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:100:in `top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:78:in `block in run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:176:in `standard_exception_handling'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:75:in `run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/bin/rake:33:in `<main>' [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye-core.rb:45:in `rescue in init_email']
+=>[ INFO 2015-06-15 10:00:23] MainLogger:  [*] Waiting for messages in git_repo_import. To exit press CTRL+C [/Users/reiz/.rvm/gems/ruby-2.2.2/bundler/gems/versioneye-core-652cf2a8e1b0/lib/versioneye/workers/git_repo_import_worker.rb:16:in `work']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-1.1) for Java:ant-contrib/ant-contrib:1.0b2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-1.1) for Java:ant-contrib/ant-contrib:1.0b3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-1.1) for Java:ant-contrib/ant-contrib:20020829 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Apache-2.0) for Java:ant/ant-launcher:1.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.0.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:16] MainLogger: new license (Public Domain) for Java:com.github.stephenc.high-scale-lib/high-scale-lib:1.1.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.7.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.8.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.8.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.8.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.8.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-bean-collections:1.8.0-BETA [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:commons-beanutils/commons-beanutils-core:1.8.0-BETA [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (Apache-2.0) for Java:com.sun.org.apache.xml.internal/resolver:20050927 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.0.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.0.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.0.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.11 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.12 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:1.0.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.0.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1-EA1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1-EA2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-EA [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-b1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b11 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b12 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b13 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b14 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b15 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b16 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b17 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b18 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b19 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b20 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b21 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b22 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b23 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b24 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b25 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b26 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b29 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b30 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b33 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b34 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b35 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b36 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b38 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b39 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b40 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b41 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b42 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b43 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b44 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b45 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b46 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b47 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b48 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b49 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b50 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b51 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b52 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b53 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b54 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b55 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b56 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b57 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b58 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b59 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b60 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b61 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b62 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b63 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b64 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b65 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:17] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2-promoted-b9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2.1-promoted-b66 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:2.2.5.jboss-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (CDDL Version 1.0) for Java:com.sun.xml.bind/jaxb-impl:1.0.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (BSD license) for Java:com.sun.xml/relaxngdatatype:1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.0-BETA18 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.0-BETA19 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.0-RC0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.0.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.1.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:2.2.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (Apache-2.0) for Java:com.yammer.metrics/metrics-core:3.0.0-BETA1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:18] MainLogger: new license (BSD License) for Java:de.zeigermann.xml/xml-im-exporter:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jakarta-regexp/jakarta-regexp:1.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:2.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:2.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:2.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:2.4-20040521 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:2.4.public_draft [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache 2.0) for Java:javax.servlet/servlet-api:3.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (GPL-3.0) for Java:javax.transaction/jta:1.0.1B [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (GPL-3.0) for Java:javax.transaction/jta:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (CDDL v1.1 and GPL v2) for Java:javax.xml/jaxrpc-api-osgi:1.1-b01 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:0.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:0.4beta [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:0.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:0.5.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:0.5beta [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxme2:src [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxmexs:0.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxmexs:0.4beta [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxmexs:0.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxmexs:0.5.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jaxme/jaxmexs:0.5beta [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (LGPL) for Java:jboss/jbossall-client:3.2.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (LGPL) for Java:jboss/jbossall-client:3.2.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (LGPL) for Java:jboss/jbossall-client:3.2.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (LGPL) for Java:jboss/jbossall-client:4.2.2.GA [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (LGPL) for Java:jboss/jbossall-client:3.2.8.SP1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:0.7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:1.0b8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:b7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:b8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:b9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:jdom/jdom:b10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (BSD License) for Java:msv/isorelax:20030225 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (BSD License) for Java:msv/isorelax:20030807 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (BSD License) for Java:msv/isorelax:20050913 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (CC-BY-2.5) for Java:net.jcip/jcip-annotations:1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant:1.7.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant:1.8.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant:1.8.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:19] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant:1.5.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.7.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.8.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.8.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.8.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.8.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.8.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.9.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.ant/ant-launcher:1.9.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.cassandra.deps/avro:1.4.0-cassandra-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.geronimo.specs/geronimo-ejb_2.1_spec:1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.geronimo.specs/geronimo-ejb_2.1_spec:1.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.geronimo.specs/geronimo-ejb_2.1_spec:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.httpcomponents/httpclient-cache:4.2.1-atlassian-5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:20] MainLogger: new license (Apache-2.0) for Java:org.apache.httpcomponents/httpmime:4.2.1-atlassian-5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1.2.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.0.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.0.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1-M1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1-M2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1-M3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor:1.3.3-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3.3-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-core:1.3.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3.3-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache 2.0-style license) for Java:org.codehaus.castor/castor-xml:1.3.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3.3-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.castor/castor-xml-schema:1.3.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-beta-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-rc-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-rc-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-rc-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.5.8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6-RC-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6-RC-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6-RC-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.6.9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7-rc-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7-rc-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.6 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-beta-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-beta-4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-rc-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-rc-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-rc-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0-rc-4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.9.0-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.9.0-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.9.0-beta-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.9.0-beta-4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:2.0.0-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:2.0.0-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.1-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.8.2-jenkins-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:21] MainLogger: new license (Apache-2.0) for Java:org.codehaus.groovy/groovy-all:1.7.11 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-7 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-8 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-9 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-11 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-14 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-15 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-17 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-20 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-22 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-46 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-48 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-9-stable-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-12 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-13 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-16 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-18 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-19 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-21 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-23 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-24 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (Apache-2.0) for Java:org.codehaus.plexus/plexus-container-default:1.0-alpha-47 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (LGPL-3.0) for Java:org.jdesktop/swing-worker:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (The MIT) for Java:org.jvnet.hudson/netx:0.5-hudson-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:22] MainLogger: new license (The MIT) for Java:org.jvnet.hudson/netx:0.5-hudson-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Apache-2.0) for Java:org.jvnet.jaxb2.maven2/maven-jaxb2-plugin-core:0.7.5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Apache-2.0) for Java:org.jvnet.jaxb2.maven2/maven-jaxb2-plugin-core:0.8.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Apache-2.0) for Java:org.jvnet.jaxb2.maven2/maven-jaxb2-plugin-core:0.8.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (ISC/BSD License) for Java:org.mindrot/jbcrypt:0.3m [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (LGPL) for Java:org.samba.jcifs/jcifs:1.2.25 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (LGPL) for Java:org.samba.jcifs/jcifs:1.3.12 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Apache-2.0) for Java:org.scannotation/scannotation:1.0.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-guice:3.1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-bean:2.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-bean:2.5.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-bean:2.5.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-bean:2.6.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:23] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.3.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.3.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.5.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.5.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Eclipse Public License, v1.0) for Java:org.sonatype.sisu/sisu-inject-plexus:2.6.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.1-rc3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3-rc2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3-rc3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.1-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.1-rc2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.1-rc4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3-rc4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.3.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.xerial.snappy/snappy-java:1.0.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.yaml/snakeyaml:1.10 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:org.yaml/snakeyaml:1.11 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:slide/webdavlib:1.0.16 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:slide/webdavlib:2.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:slide/webdavlib:2.0beta1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:slide/webdavlib:2.1M1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:slide/slide-webdavlib:2.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.1-dev [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.1.1-dev [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.1.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.2.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.2.0_rc2-dev [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:stax/stax:1.1.2-dev [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.4.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:1.2.3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:1.4.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:1.4.4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.0.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.0.2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.2.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xerces/xerces:2.3.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-3.20021217.022420 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-4 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-beta-5 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-rc1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-rc2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0-rc3 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.1-alpha-1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.1-alpha-2 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:1.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:20030211.155236 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:20030513.195101 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:20030905.201339 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Codehouse License V.1.1.1.1) for Java:classworlds/classworlds:20040709.190353 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xml-apis/xml-apis:xerces-2.7.1 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xml-apis/xml-apis:1.2.01 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xml-apis/xml-apis:1.3.02 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ INFO 2015-07-13 19:55:24] MainLogger: new license (Apache-2.0) for Java:xml-apis/xml-apis:2.0.0 [/Users/reiz/workspace/versioneye/versioneye-core/lib/versioneye/models/license.rb:53:in `find_or_create']
+=>[ERROR 2015-08-10 16:36:07] MainLogger: Could not connect to a primary node for replica set #<Moped::Cluster:70246641249380 @seeds=[<Moped::Node resolved_address="172.16.172.128:27017">]> [/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:44:in `rescue in init_email']
+=>[ERROR 2015-08-10 16:36:07] MainLogger: /Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/cluster.rb:254:in `with_primary'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:55:in `block in with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `call'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:54:in `with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/query.rb:128:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/findable.rb:144:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye/services/email_setting_service.rb:4:in `email_setting'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye/services/email_setting_service.rb:10:in `update_action_mailer_from_db'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:42:in `init_email'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:23:in `initialize'
+(irb):1:in `new'
+(irb):1:in `irb_binding'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `eval'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/context.rb:379:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:489:in `block (2 levels) in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:623:in `signal_status'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:486:in `block in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:245:in `block (2 levels) in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `loop'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `block in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:485:in `eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:395:in `block in start'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `start'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/jeweler-2.0.1/lib/jeweler/tasks.rb:231:in `block in define'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `call'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `block in execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:165:in `invoke'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:150:in `invoke_task'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:115:in `run_with_threads'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:100:in `top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:78:in `block in run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:176:in `standard_exception_handling'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:75:in `run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/bin/rake:33:in `<main>' [/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:45:in `rescue in init_email']
+=>[ERROR 2015-08-10 16:37:28] MainLogger: Could not connect to a primary node for replica set #<Moped::Cluster:70331794287980 @seeds=[<Moped::Node resolved_address="172.16.172.128:27017">]> [/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:44:in `rescue in init_email']
+=>[ERROR 2015-08-10 16:37:28] MainLogger: /Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/cluster.rb:254:in `with_primary'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:55:in `block in with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `call'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:30:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:39:in `rescue in with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/retryable.rb:29:in `with_retry'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/read_preference/primary.rb:54:in `with_node'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/moped-2.0.6/lib/moped/query.rb:128:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/mongoid-4.0.2/lib/mongoid/findable.rb:144:in `first'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye/services/email_setting_service.rb:4:in `email_setting'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye/services/email_setting_service.rb:10:in `update_action_mailer_from_db'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:42:in `init_email'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:23:in `initialize'
+(irb):1:in `new'
+(irb):1:in `irb_binding'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `eval'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/workspace.rb:86:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/context.rb:379:in `evaluate'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:489:in `block (2 levels) in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:623:in `signal_status'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:486:in `block in eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:245:in `block (2 levels) in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `loop'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:231:in `block in each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb/ruby-lex.rb:230:in `each_top_level_statement'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:485:in `eval_input'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:395:in `block in start'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `catch'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/irb.rb:394:in `start'
+/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/gems/jeweler-2.0.1/lib/jeweler/tasks.rb:231:in `block in define'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `call'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:240:in `block in execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:235:in `execute'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/task.rb:165:in `invoke'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:150:in `invoke_task'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `each'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:106:in `block in top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:115:in `run_with_threads'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:100:in `top_level'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:78:in `block in run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:176:in `standard_exception_handling'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/rake/application.rb:75:in `run'
+/Users/reiz/.rvm/rubies/ruby-2.2.2/bin/rake:33:in `<main>' [/Users/reiz/.rvm/gems/ruby-2.2.2@veye-tasks/bundler/gems/versioneye-core-72669a981709/lib/versioneye-core.rb:45:in `rescue in init_email']
