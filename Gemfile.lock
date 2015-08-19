@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 0c208efe629734e517148b877987af9bd9fc2e81
-  tag: v7.23.5
+  revision: 075c3768a35ad2a6ab903a9596e8f6714c86fc17
+  tag: v7.23.7
   specs:
-    versioneye-core (7.23.5)
+    versioneye-core (7.23.7)
       actionmailer (~> 4.2.2)
       aws-sdk (~> 2.1.3)
       bundler (~> 1.10.6)
@@ -126,7 +126,7 @@ GEM
     jwt (1.5.1)
     kgio (2.9.3)
     log4r (1.1.10)
-    loofah (2.0.2)
+    loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
