@@ -41,7 +41,7 @@ namespace :versioneye do
       scheduler.cron '15 3 * * *' do
         CommonProducer.new "process_receipts"
       end
-    end 
+    end
 
     scheduler.cron '25 3 * * *' do
       CommonProducer.new "update_user_languages"
@@ -191,7 +191,7 @@ namespace :versioneye do
     puts "---"
   end
 
-  
+
   # ***** Seeburger Import Tasks *****
 
   desc "import Seeburger license list"
@@ -309,7 +309,7 @@ namespace :versioneye do
     DependencyBadgeWorker.new.work()
   end
 
-  
+
 
 
   desc "start SyncWorker "
