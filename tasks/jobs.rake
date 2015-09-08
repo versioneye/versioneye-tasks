@@ -80,6 +80,11 @@ namespace :versioneye do
 
     # -- Weekly Jobs -- #
 
+    # Every 2nd day in the week at 8 AM
+    scheduler.cron '0 8 * * 2' do
+      CommonProducer.new "send_security_notifications"
+    end
+
     value = GlobalSetting.get(env, 'schedule_project_notification_weekly')
     value = '15 11 * * 2' if value.to_s.empty?
     scheduler.cron value do
