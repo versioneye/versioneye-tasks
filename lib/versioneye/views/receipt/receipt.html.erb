@@ -113,25 +113,25 @@
           <% receipt_lines.each do |line| %>
             <tr>
               <td class="left">
-                <%= line.period_start.strftime("%b %d, %Y") %>  
+                <%= line.period_start.strftime("%b %d, %Y") %>
                 <% if !line.period_start.to_s.eql?(line.period_end.to_s) %>
                   to <br/>
                   <%= line.period_end.strftime("%b %d, %Y") %>
-                <% end %> 
+                <% end %>
               </td>
               <td class="left"><%= line.description %></td>
               <td class="right">
                 <%= (sprintf("%.2f", (line.amount.to_f / 100.0) )).gsub(".", ",") %> <%= currency.upcase %>
               </td>
             </tr>
-          <% end %> 
+          <% end %>
           <tr >
             <td class="left">
-              <%= period_start.strftime("%b %d, %Y") %>  
+              <%= period_start.strftime("%b %d, %Y") %>
               <% if !period_start.to_s.eql?(period_end.to_s) %>
                 to <br/>
                 <%= period_end.strftime("%b %d, %Y") %>
-              <% end %> 
+              <% end %>
             </td>
             <td class="left"></td>
             <td class="right" style="font-weight: bold; border-top: 2px solid black">
@@ -145,7 +145,7 @@
             </td>
           </tr>
         </tbody>
-      </table>      
+      </table>
 
       <p>
         If you have any questions, please contact us anytime at
