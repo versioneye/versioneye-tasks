@@ -1,12 +1,12 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 9c29bb0688505c3f737326a5b2455461debbf02c
-  tag: v8.2.5
+  revision: d5f0ebce9c94dffb56f65d6b2a3de453f2d2b21f
+  tag: v8.2.8
   specs:
-    versioneye-core (8.2.5)
+    versioneye-core (8.2.8)
       actionmailer (~> 4.2.2)
       aws-sdk (~> 2.2.0)
-      bundler (~> 1.10.6)
+      bundler (~> 1.11.0)
       bunny (~> 2.2.0)
       cocoapods-core (~> 0.39.0)
       dalli (~> 2.7.0)
@@ -228,7 +228,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0)
+  bundler (~> 1.11)
   bunny (~> 2.2.0)
   jeweler (~> 2.0.1)
   rufus-scheduler (= 3.1.9)
@@ -237,4 +237,4 @@ DEPENDENCIES
   versioneye-core!
 
 BUNDLED WITH
-   1.10.6
+   1.11.0
