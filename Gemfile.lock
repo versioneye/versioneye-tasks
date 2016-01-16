@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 8ca2ab62ac44bb90e83eb21e4a638254b3643131
-  tag: v8.4.5
+  revision: 796351eac121682123457fa3306113f82ba8e27f
+  tag: v8.6.3
   specs:
-    versioneye-core (8.4.5)
+    versioneye-core (8.6.3)
       actionmailer (~> 4.2.2)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -65,12 +65,12 @@ GEM
     addressable (2.3.8)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.2.9)
-      aws-sdk-resources (= 2.2.9)
-    aws-sdk-core (2.2.9)
+    aws-sdk (2.2.11)
+      aws-sdk-resources (= 2.2.11)
+    aws-sdk-core (2.2.11)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.9)
-      aws-sdk-core (= 2.2.9)
+    aws-sdk-resources (2.2.11)
+      aws-sdk-core (= 2.2.11)
     bson (4.0.0)
     builder (3.2.2)
     bunny (2.2.2)
@@ -177,7 +177,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
-    rake (10.4.2)
+    rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
     rest-client (1.8.0)
