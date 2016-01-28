@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: b6ef0a5a8ba0c110d18c6266ef8a0e3dba39e1e5
-  tag: v8.6.7
+  revision: b4c6101e4358248a7da9e70cd76ca1ce77b952b6
+  tag: v8.6.8
   specs:
-    versioneye-core (8.6.7)
+    versioneye-core (8.6.8)
       actionmailer (= 4.2.5)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -159,7 +159,7 @@ GEM
       rack (~> 1.2)
     octokit (4.2.0)
       sawyer (~> 0.6.0, >= 0.5.3)
-    origin (2.1.1)
+    origin (2.2.0)
     pdfkit (0.8.2)
     persistent_http (1.0.6)
       gene_pool (>= 1.3)
