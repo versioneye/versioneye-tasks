@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: b058d76713def0206519a6023e1996c8c6f4b456
-  tag: v8.6.16
+  revision: 7f9da4640eae6108db0db6c96d50a8c5892801da
+  tag: v8.7.0
   specs:
-    versioneye-core (8.6.16)
+    versioneye-core (8.7.0)
       actionmailer (= 4.2.5)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -216,7 +216,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.2)
     will_paginate (3.1.0)
     will_paginate_mongoid (2.0.1)
       mongoid
