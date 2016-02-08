@@ -191,8 +191,8 @@ namespace :versioneye do
   task :spdx_import do
     VersioneyeCore.new
 
-    puts "START to export xml site map"
-    LicenseService.import_from "/versioneye-tasks/data/spdx_license.csv"
+    puts "START to export spdx licenses"
+    LicenseService.import_from "/app/data/spdx_license.csv"
     puts "---"
   end
 
@@ -226,10 +226,21 @@ namespace :versioneye do
 
     puts "START to create default admin"
     AdminService.create_default_admin
+
+    puts "START to create default plans"
     Plan.create_defaults
+
+    puts "START to create ES Product index"
     EsProduct.reset
+
+    puts "START to create ES User index"
     EsUser.reset
+
+    puts "START to fill MavenRepository"
     MavenRepository.fill_it
+
+    puts "START to import spdx licenses"
+    LicenseService.import_from "/app/data/spdx_license.csv"
     puts "---"
   end
 
