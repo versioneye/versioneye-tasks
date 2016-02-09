@@ -1,9 +1,9 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: ee2eb9f281605536b7b167df08e2d7fc0a4770ea
-  tag: v8.7.16
+  revision: 279ecc68d160a6754f75bb5a777fbde64be4cbd1
+  tag: v8.8.0
   specs:
-    versioneye-core (8.7.16)
+    versioneye-core (8.8.0)
       actionmailer (= 4.2.5)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -178,7 +178,7 @@ GEM
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rake (10.5.0)
-    rdoc (4.2.1)
+    rdoc (4.2.2)
       json (~> 1.4)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
