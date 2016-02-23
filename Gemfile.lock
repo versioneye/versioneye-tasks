@@ -1,10 +1,10 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 4b08ce02395f6c5bd19fec76be40b21fcd837499
-  tag: v8.9.4
+  revision: db568a417b615accad8068ee500df72671e052da
+  tag: v8.9.6
   specs:
-    versioneye-core (8.9.4)
-      actionmailer (= 4.2.5.1)
+    versioneye-core (8.9.6)
+      actionmailer (= 4.2.5)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
       bunny (~> 2.2.0)
@@ -31,32 +31,32 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    actionmailer (4.2.5.1)
-      actionpack (= 4.2.5.1)
-      actionview (= 4.2.5.1)
-      activejob (= 4.2.5.1)
+    actionmailer (4.2.5)
+      actionpack (= 4.2.5)
+      actionview (= 4.2.5)
+      activejob (= 4.2.5)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (4.2.5.1)
-      actionview (= 4.2.5.1)
-      activesupport (= 4.2.5.1)
+    actionpack (4.2.5)
+      actionview (= 4.2.5)
+      activesupport (= 4.2.5)
       rack (~> 1.6)
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.5.1)
-      activesupport (= 4.2.5.1)
+    actionview (4.2.5)
+      activesupport (= 4.2.5)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activejob (4.2.5.1)
-      activesupport (= 4.2.5.1)
+    activejob (4.2.5)
+      activesupport (= 4.2.5)
       globalid (>= 0.3.0)
-    activemodel (4.2.5.1)
-      activesupport (= 4.2.5.1)
+    activemodel (4.2.5)
+      activesupport (= 4.2.5)
       builder (~> 3.1)
-    activesupport (4.2.5.1)
+    activesupport (4.2.5)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
