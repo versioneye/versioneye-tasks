@@ -7,6 +7,7 @@ ADD . /app
 
 RUN apt-get update && apt-get install -y supervisor; \
     cp /app/supervisord.conf /etc/supervisord.conf; \
+    mkdir -p /root/.ssh; \
     cp /app/veye_deploy_rsa /root/.ssh/id_rsa; \
     chmod go-rwx /root/.ssh/id_rsa; \
     cd /root/.ssh; ssh-agent -s; eval $(ssh-agent); ssh-add id_rsa; \
