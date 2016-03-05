@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y supervisor; \
     cd /root/.ssh; ssh-agent -s; eval $(ssh-agent); ssh-add id_rsa; \
     ssh-keyscan github.com >> /root/.ssh/known_hosts; \
     mkdir -p /cocoapods; \
-    bundle install; \
+    cd /app/ && bundle install; \
     rm /root/.ssh/id_rsa
 
 CMD /usr/bin/supervisord -c /etc/supervisord.conf
