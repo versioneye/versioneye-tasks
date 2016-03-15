@@ -1,10 +1,10 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 5d564b031ed988783228aea5216e9d848b5d267f
-  tag: v8.11.8
+  revision: 3a614bdcb425c78f3d500f5c3476da7458997e4f
+  tag: v8.11.10
   specs:
-    versioneye-core (8.11.8)
-      actionmailer (~> 4.2.5.1)
+    versioneye-core (8.11.10)
+      actionmailer (~> 4.2.5.2)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
       bunny (~> 2.3.0)
@@ -65,12 +65,12 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.2.24)
-      aws-sdk-resources (= 2.2.24)
-    aws-sdk-core (2.2.24)
+    aws-sdk (2.2.26)
+      aws-sdk-resources (= 2.2.26)
+    aws-sdk-core (2.2.26)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.24)
-      aws-sdk-core (= 2.2.24)
+    aws-sdk-resources (2.2.26)
+      aws-sdk-core (= 2.2.26)
     bson (4.0.4)
     builder (3.2.2)
     bunny (2.3.0)
@@ -83,7 +83,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160216)
+    domain_name (0.5.20160309)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     etcd (0.3.0)
@@ -176,7 +176,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rake (10.5.0)
+    rake (11.1.1)
     rdoc (4.2.2)
       json (~> 1.4)
     rest-client (1.8.0)
@@ -199,7 +199,7 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.36.1)
+    stripe (1.36.2)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
     tire (0.6.2)
