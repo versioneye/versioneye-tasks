@@ -20,6 +20,10 @@ namespace :versioneye do
       UpdateIndexProducer.new("product")
     end
 
+    scheduler.cron '9 * * * *' do
+      CommonProducer.new "remove_temp_projects"
+    end
+
 
     # -- Daily Jobs -- #
 
