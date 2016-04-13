@@ -1,9 +1,10 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 08a2d0822507ada368ec1ef2979055c0f99021f3
-  tag: v8.14.1
+  revision: d79e29b2a89b087a9a4185c7f9a27081092850a7
+  branch: master
+  tag: v8.16.3
   specs:
-    versioneye-core (8.14.1)
+    versioneye-core (8.16.3)
       actionmailer (~> 4.2.5.2)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -23,7 +24,7 @@ GIT
       pdfkit (~> 0.8.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.38.0)
+      stripe (~> 1.40.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -65,15 +66,15 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.2.31)
-      aws-sdk-resources (= 2.2.31)
-    aws-sdk-core (2.2.31)
+    aws-sdk (2.2.34)
+      aws-sdk-resources (= 2.2.34)
+    aws-sdk-core (2.2.34)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.31)
-      aws-sdk-core (= 2.2.31)
+    aws-sdk-resources (2.2.34)
+      aws-sdk-core (= 2.2.34)
     bson (4.0.4)
     builder (3.2.2)
-    bunny (2.3.0)
+    bunny (2.3.1)
       amq-protocol (>= 2.0.1)
     cocoapods-core (0.39.0)
       activesupport (>= 4.0.2)
@@ -121,9 +122,10 @@ GEM
       nokogiri (>= 1.5.10)
       rake
       rdoc
-    jmespath (1.2)
-      json (>= 1.8.1)
+    jmespath (1.2.4)
+      json_pure (>= 1.8.1)
     json (1.8.3)
+    json_pure (1.8.3)
     jwt (1.5.1)
     kgio (2.10.0)
     loofah (2.0.3)
@@ -136,7 +138,7 @@ GEM
     mixlib-log (1.6.0)
     mongo (2.2.4)
       bson (~> 4.0)
-    mongoid (5.1.1)
+    mongoid (5.1.2)
       activemodel (~> 4.0)
       mongo (~> 2.1)
       origin (~> 2.2)
@@ -200,7 +202,7 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.38.0)
+    stripe (1.40.0)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
     tire (0.6.2)
