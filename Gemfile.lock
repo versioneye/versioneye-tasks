@@ -1,10 +1,10 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: d8672337279df710849179c0bccc89f919c22c5e
-  branch: master
-  tag: v8.16.8
+  revision: e7a2cb8106c285aaa6e51d3b5160d98fd257c1f0
+  branch: feature/xray
+  tag: v8.16.18
   specs:
-    versioneye-core (8.16.8)
+    versioneye-core (8.16.18)
       actionmailer (~> 4.2.5.2)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
@@ -24,7 +24,7 @@ GIT
       pdfkit (~> 0.8.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.40.0)
+      stripe (~> 1.41.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -72,7 +72,7 @@ GEM
       jmespath (~> 1.0)
     aws-sdk-resources (2.2.34)
       aws-sdk-core (= 2.2.34)
-    bson (4.0.4)
+    bson (4.1.0)
     builder (3.2.2)
     bunny (2.3.1)
       amq-protocol (>= 2.0.1)
@@ -202,7 +202,7 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.40.0)
+    stripe (1.41.0)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
     tire (0.6.2)
