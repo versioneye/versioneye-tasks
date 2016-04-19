@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :branch => 'feature/xray', :tag => 'v8.16.25'
+gem 'versioneye-core'    , :git => 'git@github.com:versioneye/versioneye-core.git', :branch => 'feature/xray', :tag => 'v8.16.26'
 # gem 'versioneye-core'    , :path => "~/workspace/versioneye/versioneye-core"
 
 gem 'bunny', '~> 2.3.0'
