@@ -1,10 +1,10 @@
 GIT
   remote: git@github.com:versioneye/versioneye-core.git
-  revision: 55ea365649329ed4e96dcb954a4a9b172d4d8c95
+  revision: 273e9c8e50744cda7b82654737cae1cd7a13d811
   branch: feature/xray
-  tag: v8.16.27
+  tag: v8.16.28
   specs:
-    versioneye-core (8.16.27)
+    versioneye-core (8.16.28)
       actionmailer (~> 4.2.5.2)
       aws-sdk (~> 2.2.0)
       bundler (~> 1.11.0)
