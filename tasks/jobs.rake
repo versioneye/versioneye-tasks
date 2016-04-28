@@ -330,14 +330,6 @@ namespace :versioneye do
   end
 
 
-  desc "start XrayNotificationWorker "
-  task :xray_notification_worker do
-    VersioneyeCore.new
-    XrayNotificationQueueWorker.new.work()
-  end
-
-
-
   desc "start SyncWorker "
   task :sync_worker do
     VersioneyeCore.new
