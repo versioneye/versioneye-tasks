@@ -136,9 +136,10 @@
             <td class="left"></td>
             <td class="right" style="font-weight: bold; border-top: 2px solid black">
               <% if taxable %>
-                Price:           <%= sprintf("%.2f", (total.to_f / 100 * 0.81) ).gsub(".", ",") %> <%= currency.upcase %><br/>
-                Tax (19% Mwst.): <%= sprintf("%.2f", (total.to_f / 100 * 0.19) ).gsub(".", ",") %> <%= currency.upcase %><br/>
-                Total:           <%= sprintf("%.2f", (total.to_f / 100       ) ).gsub(".", ",") %> <%= currency.upcase %>
+                <% price = total.to_f / 1.19 %>
+                Price:           <%= sprintf("%.2f", ( price / 100                ) ).gsub(".", ",") %> <%= currency.upcase %><br/>
+                Tax (19% Mwst.): <%= sprintf("%.2f", ( (total.to_f - price) / 100 ) ).gsub(".", ",") %> <%= currency.upcase %><br/>
+                Total:           <%= sprintf("%.2f", ( total.to_f / 100           ) ).gsub(".", ",") %> <%= currency.upcase %>
               <% else %>
                 <%= (sprintf("%.2f", (total.to_f / 100.0) )).gsub(".", ",").gsub(".", ",") %> <%= currency.upcase %>
               <% end %>
