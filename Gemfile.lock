@@ -112,7 +112,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    jeweler (2.0.1)
+    jeweler (2.1.1)
       builder
       bundler (>= 1.0)
       git (>= 1.2.5)
@@ -121,6 +121,7 @@ GEM
       nokogiri (>= 1.5.10)
       rake
       rdoc
+      semver
     jmespath (1.2.4)
       json_pure (>= 1.8.1)
     json (1.8.3)
@@ -189,6 +190,7 @@ GEM
     sawyer (0.7.0)
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
+    semver (1.0.1)
     semverly (1.0.0)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
@@ -229,7 +231,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.11)
   bunny (~> 2.3.0)
-  jeweler (~> 2.0.1)
+  jeweler (~> 2.1.1)
   rufus-scheduler (= 3.2.0)
   shoulda
   simplecov
