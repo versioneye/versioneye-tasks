@@ -1,12 +1,12 @@
 GIT
-  remote: git@github.com:versioneye/versioneye-core.git
-  revision: fb54507decd7dd069a12dc9c2d72085829534a69
-  tag: v8.19.4
+  remote: https://github.com/versioneye/versioneye-core.git
+  revision: f6757ebed9b38652bd89fc2facc1fc97f0b67191
+  tag: v8.20.3
   specs:
-    versioneye-core (8.19.4)
+    versioneye-core (8.20.3)
       actionmailer (~> 4.2.5.2)
-      aws-sdk (~> 2.2.0)
-      bundler (~> 1.11.0)
+      aws-sdk (~> 2.3.0)
+      bundler (~> 1.12.0)
       bunny (~> 2.3.0)
       cocoapods-core (~> 0.39.0)
       dalli (~> 2.7.0)
@@ -23,7 +23,7 @@ GIT
       pdfkit (~> 0.8.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.41.0)
+      stripe (~> 1.42.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -65,12 +65,12 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.2.37)
-      aws-sdk-resources (= 2.2.37)
-    aws-sdk-core (2.2.37)
+    aws-sdk (2.3.4)
+      aws-sdk-resources (= 2.3.4)
+    aws-sdk-core (2.3.4)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.37)
-      aws-sdk-core (= 2.2.37)
+    aws-sdk-resources (2.3.4)
+      aws-sdk-core (= 2.3.4)
     bson (4.1.1)
     builder (3.2.2)
     bunny (2.3.1)
@@ -134,7 +134,7 @@ GEM
       mime-types (>= 1.16, < 4)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
+    minitest (5.9.0)
     mixlib-log (1.6.0)
     mongo (2.2.5)
       bson (~> 4.0)
@@ -143,7 +143,7 @@ GEM
       mongo (~> 2.1)
       origin (~> 2.2)
       tzinfo (>= 0.3.37)
-    multi_json (1.11.3)
+    multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     nap (1.1.0)
@@ -203,7 +203,7 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.41.0)
+    stripe (1.42.0)
       rest-client (~> 1.4)
     thread_safe (0.3.5)
     tire (0.6.2)
@@ -229,7 +229,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.11)
+  bundler (~> 1.12)
   bunny (~> 2.3.0)
   jeweler (~> 2.1.1)
   rufus-scheduler (= 3.2.0)
@@ -238,4 +238,4 @@ DEPENDENCIES
   versioneye-core!
 
 BUNDLED WITH
-   1.11.2
+   1.12.4
