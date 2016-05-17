@@ -95,10 +95,6 @@ namespace :versioneye do
       ProjectUpdateProducer.new( Project::A_PERIOD_WEEKLY )
     end
 
-    scheduler.cron '15 12 * * 2' do
-      CommonProducer.new "send_verification_reminders"
-    end
-
     scheduler.cron '21 12 * * 2' do
       CommonProducer.new "update_distinct_languages"
     end
@@ -156,24 +152,6 @@ namespace :versioneye do
     puts "START to send out the notification E-Mails."
     NotificationService.send_notifications
     puts "---"
-  end
-
-  desc "send out verification reminders"
-  task :send_verification_reminders do
-    VersioneyeCore.new
-
-    puts "START to send out verification reminder E-Mails."
-    User.send_verification_reminders
-    puts "---"
-  end
-
-  desc "send out suggestion emails to inactive users"
-  task :send_suggestions do
-    VersioneyeCore.new
-
-    puts "START to send out suggestion emails to inactive users"
-    User.non_followers.each { |user| user.send_suggestions }
-    puts "STOP  to send out suggestion emails to inactive users"
   end
 
 
