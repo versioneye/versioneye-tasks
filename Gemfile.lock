@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 961db9d39a00d28280daa44829ac118c43f0bb37
-  tag: v8.20.7
+  revision: cbd485698a5b7b16f0a6eb090aef83b49bc98b78
+  tag: v8.20.8
   specs:
-    versioneye-core (8.20.7)
+    versioneye-core (8.20.8)
       actionmailer (~> 4.2.6)
       aws-sdk (~> 2.3.0)
-      bundler (~> 1.12.0)
+      bundler (~> 1.12.5)
       bunny (~> 2.3.0)
       cocoapods-core (~> 0.39.0)
       dalli (~> 2.7.0)
