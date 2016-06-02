@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: b82d5a1abe2c2b0e67b4e8078671e7133235f1dd
-  tag: v8.20.9
+  revision: d7d2235d8ad86df5219dd1a02e979e67a9d4fc2f
+  tag: v8.20.13
   specs:
-    versioneye-core (8.20.9)
+    versioneye-core (8.20.13)
       actionmailer (~> 4.2.6)
       aws-sdk (~> 2.3.0)
       bundler (~> 1.12.5)
@@ -185,7 +185,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rufus-scheduler (3.2.0)
+    rufus-scheduler (3.2.1)
     sawyer (0.7.0)
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
@@ -231,7 +231,7 @@ DEPENDENCIES
   bundler (~> 1.12)
   bunny (~> 2.3.0)
   jeweler (~> 2.1.1)
-  rufus-scheduler (= 3.2.0)
+  rufus-scheduler (= 3.2.1)
   shoulda
   simplecov
   versioneye-core!
