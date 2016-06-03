@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - 172.16.148.134:27017
+        - 192.168.178.56:27017
       options:
         max_pool_size: 20
   options:
@@ -21,7 +21,7 @@ test:
     default:
       database: veye_test
       hosts:
-        - 172.16.148.134:27017
+        - 192.168.178.56:27017
       options:
         max_pool_size: 20
   options:
