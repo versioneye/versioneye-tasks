@@ -1,9 +1,9 @@
 source "http://rubygems.org"
 
-gem 'versioneye-core'    , :git => 'https://github.com/versioneye/versioneye-core.git', :tag => 'v8.21.2'
+gem 'versioneye-core'    , :git => 'https://github.com/versioneye/versioneye-core.git', :tag => 'v8.23.1'
 # gem 'versioneye-core'    , :path => "~/workspace/versioneye/versioneye-core"
 
-gem 'bunny', '~> 2.3.0'
+gem 'bunny', '~> 2.4.0'
 gem 'rufus-scheduler', '3.2.1'
 
 group :development do
