@@ -215,9 +215,6 @@ namespace :versioneye do
     puts "START to create ES Product index"
     EsProduct.reset
 
-    puts "START to create ES User index"
-    EsUser.reset
-
     puts "START to fill MavenRepository"
     MavenRepository.fill_it
 
