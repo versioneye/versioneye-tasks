@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 225242fd458f88a762535fdf85d1f6cba2059328
-  tag: v8.31.1
+  revision: 3da281ec80a717ec3fcc4ab7fe7e6cbe04987756
+  tag: v9.1.0
   specs:
-    versioneye-core (8.31.1)
+    versioneye-core (9.1.0)
       actionmailer (~> 4.2.6)
       aws-sdk (~> 2.3.0)
       bundler (~> 1.12.5)
@@ -14,14 +14,14 @@ GIT
       httparty (~> 0.13.1)
       mongoid (~> 5.1.0)
       naturalsorter (~> 3.0.14)
-      net-ldap (~> 0.14.0)
+      net-ldap (~> 0.15.0)
       nokogiri (~> 1.6.8)
       oauth (~> 0.5.0)
       octokit (~> 4.3.0)
       pdfkit (~> 0.8.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.44.0)
+      stripe (~> 1.48.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -93,7 +93,7 @@ GEM
     gene_pool (1.4.1)
       thread_safe
     git (1.3.0)
-    github_api (0.14.3)
+    github_api (0.14.4)
       addressable (~> 2.4.0)
       descendants_tracker (~> 0.0.4)
       faraday (~> 0.8, < 0.10)
@@ -145,7 +145,7 @@ GEM
     multipart-post (2.0.0)
     nap (1.1.0)
     naturalsorter (3.0.14)
-    net-ldap (0.14.0)
+    net-ldap (0.15.0)
     netrc (0.11.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -207,8 +207,8 @@ GEM
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
     slop (3.6.0)
-    stripe (1.44.0)
-      rest-client (~> 1.4)
+    stripe (1.48.0)
+      rest-client (>= 1.4, < 3.0)
     thread_safe (0.3.5)
     tire (0.6.2)
       activemodel (>= 3.0)
