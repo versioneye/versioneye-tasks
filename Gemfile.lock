@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: b672941c04852efca31f2adb6ecd595c8942306d
-  tag: v9.7.7
+  revision: c041778c19a0d36e54714065ce0f6bb9713801ae
+  tag: v9.7.9
   specs:
-    versioneye-core (9.7.7)
+    versioneye-core (9.7.9)
       actionmailer (~> 4.2.6)
       aws-sdk (~> 2.4.0)
       bundler (~> 1.12.5)
-      bunny (~> 2.4.0)
+      bunny (~> 2.5.0)
       cocoapods-core (~> 0.39.0)
       dalli (~> 2.7.0)
       etcd (~> 0.3.0)
@@ -21,7 +21,7 @@ GIT
       pdfkit (~> 0.8.0)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.48.0)
+      stripe (~> 1.49.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.9.9.1)
@@ -71,7 +71,7 @@ GEM
       aws-sdk-core (= 2.4.4)
     bson (4.1.1)
     builder (3.2.2)
-    bunny (2.4.0)
+    bunny (2.5.0)
       amq-protocol (>= 2.0.1)
     cocoapods-core (0.39.0)
       activesupport (>= 4.0.2)
@@ -199,7 +199,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.48.0)
+    stripe (1.49.0)
       rest-client (>= 1.4, < 3.0)
     thread_safe (0.3.5)
     tire (0.6.2)
@@ -226,7 +226,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.12)
-  bunny (~> 2.4.0)
+  bunny (~> 2.5.0)
   jeweler (~> 2.1.1)
   rufus-scheduler (= 3.2.1)
   shoulda
