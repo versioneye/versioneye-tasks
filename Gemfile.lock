@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 52050053981c182634579c12d08f10ba0284b368
-  tag: v9.7.32
+  revision: 440510a4024780a5bcfb87727765d0b724a7fc40
+  tag: v9.7.34
   specs:
-    versioneye-core (9.7.32)
-      actionmailer (~> 4.2.6)
+    versioneye-core (9.7.34)
+      actionmailer (~> 4.2.7)
       aws-sdk (~> 2.4.0)
       bundler (~> 1.12.5)
       bunny (~> 2.5.0)
@@ -129,7 +129,7 @@ GEM
     mime-types (2.99.2)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
-    mixlib-log (1.7.0)
+    mixlib-log (1.7.1)
     mongo (2.2.7)
       bson (~> 4.0)
     mongoid (5.1.4)
