@@ -1,25 +1,25 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 4f5b2f1aa678c78300911a36c8f16f2f3462bc20
-  tag: v9.8.8
+  revision: e9d49ad5d0213b5a55e0f61a8b72060be1a2bda5
+  tag: v9.9.3
   specs:
-    versioneye-core (9.8.8)
+    versioneye-core (9.9.3)
       actionmailer (~> 4.2.7)
       aws-sdk (~> 2.5.8)
-      bundler (~> 1.12.5)
-      bunny (~> 2.5.0)
+      bundler (~> 1.13.0)
+      bunny (~> 2.5.1)
       cocoapods-core (~> 0.39.0)
-      dalli (~> 2.7.0)
+      dalli (~> 2.7.6)
       etcd (~> 0.3.0)
       gemnasium-parser (~> 0.1.9)
       httparty (~> 0.14.0)
-      mongoid (~> 5.1.0)
+      mongoid (~> 5.1.4)
       naturalsorter (~> 3.0.14)
       net-ldap (~> 0.15.0)
       nokogiri (~> 1.6.8)
       oauth (~> 0.5.0)
       octokit (~> 4.3.0)
-      pdfkit (~> 0.8.0)
+      pdfkit (~> 0.8.2)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
       stripe (~> 1.54.0)
@@ -64,12 +64,12 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.5.8)
-      aws-sdk-resources (= 2.5.8)
-    aws-sdk-core (2.5.8)
+    aws-sdk (2.5.11)
+      aws-sdk-resources (= 2.5.11)
+    aws-sdk-core (2.5.11)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.5.8)
-      aws-sdk-core (= 2.5.8)
+    aws-sdk-resources (2.5.11)
+      aws-sdk-core (= 2.5.11)
     bson (4.1.1)
     builder (3.2.2)
     bunny (2.5.1)
@@ -127,7 +127,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mime-types (2.99.2)
+    mime-types (2.99.3)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     mixlib-log (1.7.1)
@@ -235,4 +235,4 @@ DEPENDENCIES
   versioneye-core!
 
 BUNDLED WITH
-   1.12.5
+   1.13.0
