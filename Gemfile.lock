@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: d4c690225309354055a4d579ac62012eab877e6a
-  tag: v10.1.4
+  revision: 15cdfdd07d614d4b13e2ffaadc61b1d13c36b51b
+  tag: v10.1.5
   specs:
-    versioneye-core (10.1.4)
+    versioneye-core (10.1.5)
       actionmailer (~> 4.2.7)
       aws-sdk (~> 2.6.2)
       bundler (~> 1.13.0)
@@ -64,12 +64,12 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.6.5)
-      aws-sdk-resources (= 2.6.5)
-    aws-sdk-core (2.6.5)
+    aws-sdk (2.6.6)
+      aws-sdk-resources (= 2.6.6)
+    aws-sdk-core (2.6.6)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.5)
-      aws-sdk-core (= 2.6.5)
+    aws-sdk-resources (2.6.6)
+      aws-sdk-core (= 2.6.6)
     bson (4.1.1)
     builder (3.2.2)
     bunny (2.5.1)
@@ -145,9 +145,8 @@ GEM
     naturalsorter (3.0.14)
     net-ldap (0.15.0)
     netrc (0.11.0)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     oauth (0.5.1)
     oauth2 (1.2.0)
       faraday (>= 0.8, < 0.10)
@@ -164,7 +163,6 @@ GEM
     persistent_httparty (0.1.2)
       httparty (~> 0.9)
       persistent_http (< 2)
-    pkg-config (1.1.7)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
