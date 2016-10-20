@@ -86,10 +86,10 @@
         <%= A_COUNTRIES[country] %><br/>
         <br/>
         <br/>
-        Receipt Nr: <b><%= receipt_nr %></b><br/>
+        Invoice No: <b><%= receipt_nr %></b><br/>
         Invoice ID: <b><%= invoice_id %></b><br/>
         Organisation: <b><%= organisation.name %></b><br/>
-        Date: <%= Time.now.strftime("%b %d, %Y") %>
+        Date: <%= Time.now.strftime("%d. %b %Y") %>
         <br/>
         <br/>
       </div>
@@ -113,10 +113,10 @@
           <% receipt_lines.each do |line| %>
             <tr>
               <td class="left">
-                <%= line.period_start.strftime("%b %d, %Y") %>
+                <%= line.period_start.strftime("%d. %b %Y") %>
                 <% if !line.period_start.to_s.eql?(line.period_end.to_s) %>
                   to <br/>
-                  <%= line.period_end.strftime("%b %d, %Y") %>
+                  <%= line.period_end.strftime("%d. %b %Y") %>
                 <% end %>
               </td>
               <td class="left"><%= line.description %></td>
@@ -127,10 +127,10 @@
           <% end %>
           <tr >
             <td class="left">
-              <%= period_start.strftime("%b %d, %Y") %>
+              <%= period_start.strftime("%d. %b %Y") %>
               <% if !period_start.to_s.eql?(period_end.to_s) %>
                 to <br/>
-                <%= period_end.strftime("%b %d, %Y") %>
+                <%= period_end.strftime("%d. %b %Y") %>
               <% end %>
             </td>
             <td class="left"></td>
