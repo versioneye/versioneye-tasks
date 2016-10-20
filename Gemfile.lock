@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 10907f5a1e312a72226a0f75c3d73fab052bc9da
-  tag: v10.3.1
+  revision: e1de65ac68bcbb432a1044da84c37322ffdef740
+  tag: v10.3.13
   specs:
-    versioneye-core (10.3.1)
+    versioneye-core (10.3.13)
       actionmailer (~> 5.0.0.1)
       aws-sdk (~> 2.6.2)
       bundler (~> 1.13.0)
@@ -62,12 +62,12 @@ GEM
     addressable (2.4.0)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.6.9)
-      aws-sdk-resources (= 2.6.9)
-    aws-sdk-core (2.6.9)
+    aws-sdk (2.6.11)
+      aws-sdk-resources (= 2.6.11)
+    aws-sdk-core (2.6.11)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.9)
-      aws-sdk-core (= 2.6.9)
+    aws-sdk-resources (2.6.11)
+      aws-sdk-core (= 2.6.11)
     bson (4.1.1)
     builder (3.2.2)
     bunny (2.6.0)
@@ -132,7 +132,7 @@ GEM
     mixlib-log (1.7.1)
     mongo (2.3.0)
       bson (~> 4.1)
-    mongoid (6.0.0)
+    mongoid (6.0.2)
       activemodel (~> 5.0)
       mongo (~> 2.3)
     multi_json (1.12.1)
