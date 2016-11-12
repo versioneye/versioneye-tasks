@@ -10,17 +10,18 @@ namespace :versioneye do
     scheduler = Rufus::Scheduler.new
 
 
-    # -- Hourly Jobs -- #
-
-    scheduler.cron '5 * * * *' do
+    # Every 5 minutes
+    scheduler.every('5m') do
       UpdateIndexProducer.new("user")
     end
 
-    scheduler.cron '7 * * * *' do
+    # Every 10 minutes
+    scheduler.every('10m') do
       UpdateIndexProducer.new("product")
     end
 
-    scheduler.cron '9 * * * *' do
+    # Every 5 minutes
+    scheduler.every('5m') do
       CommonProducer.new "remove_temp_projects"
     end
 
@@ -39,6 +40,10 @@ namespace :versioneye do
 
     scheduler.cron '10 1 * * *' do
       CommonProducer.new "update_integration_statuses"
+    end
+
+    scheduler.cron '10 2 * * *' do
+      CommonProducer.new "update_authors"
     end
 
     if env.eql?('production')
