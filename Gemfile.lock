@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 011cd991db3a89060b2543505626ec3113b2e3da
-  tag: v10.6.3
+  revision: 2ccc3b879a7445cc5d68f6f6ef54985b5efbe22c
+  tag: v10.6.6
   specs:
-    versioneye-core (10.6.3)
+    versioneye-core (10.6.6)
       actionmailer (~> 5.0.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -63,15 +63,15 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.6.28)
-      aws-sdk-resources (= 2.6.28)
-    aws-sdk-core (2.6.28)
+    aws-sdk (2.6.29)
+      aws-sdk-resources (= 2.6.29)
+    aws-sdk-core (2.6.29)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.28)
-      aws-sdk-core (= 2.6.28)
+    aws-sdk-resources (2.6.29)
+      aws-sdk-core (= 2.6.29)
     aws-sigv4 (1.0.0)
-    bson (4.1.1)
+    bson (4.2.0)
     builder (3.2.2)
     bunny (2.6.1)
       amq-protocol (>= 2.0.1)
@@ -135,8 +135,8 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     mixlib-log (1.7.1)
-    mongo (2.3.1)
-      bson (~> 4.1)
+    mongo (2.4.0)
+      bson (~> 4.2.0)
     mongoid (6.0.2)
       activemodel (~> 5.0)
       mongo (~> 2.3)
@@ -196,7 +196,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.57.0)
+    stripe (1.57.1)
       rest-client (>= 1.4, < 4.0)
     thread_safe (0.3.5)
     tire (0.6.2)
