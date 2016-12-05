@@ -70,10 +70,9 @@ namespace :versioneye do
       SendNotificationEmailsProducer.new "send"
     end
 
-    value = GlobalSetting.get(env, 'schedule_project_notification_daily')
-    value = '15 9 * * *' if value.to_s.empty?
+    value = '15 7 * * *' if value.to_s.empty?
     scheduler.cron value do
-      ProjectUpdateProducer.new( Project::A_PERIOD_DAILY )
+      TeamNotificationService.start( false )
     end
 
     scheduler.cron '15 18 * * *' do
@@ -87,30 +86,8 @@ namespace :versioneye do
       end
     end
 
-    # -- Weekly Jobs -- #
-
-    # Every 2nd day in the week at 8 AM
-    scheduler.cron '0 8 * * 2' do
-      CommonProducer.new "send_security_notifications"
-    end
-
-    value = GlobalSetting.get(env, 'schedule_project_notification_weekly')
-    value = '15 11 * * 2' if value.to_s.empty?
-    scheduler.cron value do
-      ProjectUpdateProducer.new( Project::A_PERIOD_WEEKLY )
-    end
-
     scheduler.cron '21 12 * * 2' do
       CommonProducer.new "update_distinct_languages"
-    end
-
-
-    # -- Monthly Jobs -- #
-
-    value = GlobalSetting.get(env, 'schedule_project_notification_monthly')
-    value = '1 11 1 * *' if value.to_s.empty?
-    scheduler.cron value do
-      ProjectUpdateProducer.new( Project::A_PERIOD_MONTHLY )
     end
 
     scheduler.join
@@ -271,6 +248,12 @@ namespace :versioneye do
   task :project_update_worker do
     VersioneyeCore.new
     ProjectUpdateWorker.new.work()
+  end
+
+  desc "start TeamNotificationWorker"
+  task :team_notification_worker do
+    VersioneyeCore.new
+    TeamNotificationWorker.new.work()
   end
 
   desc "start UpdateMetaData"
