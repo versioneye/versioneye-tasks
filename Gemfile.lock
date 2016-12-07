@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 937721cde5216febbdfdcb8eb66a4273e4375c67
-  tag: v10.9.0
+  revision: 0f51d5b0764bc3c39306977332304131cedae4fc
+  tag: v10.10.1
   specs:
-    versioneye-core (10.9.0)
+    versioneye-core (10.10.1)
       actionmailer (~> 5.0.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -63,13 +63,13 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.6.32)
-      aws-sdk-resources (= 2.6.32)
-    aws-sdk-core (2.6.32)
+    aws-sdk (2.6.33)
+      aws-sdk-resources (= 2.6.33)
+    aws-sdk-core (2.6.33)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.32)
-      aws-sdk-core (= 2.6.32)
+    aws-sdk-resources (2.6.33)
+      aws-sdk-core (= 2.6.33)
     aws-sigv4 (1.0.0)
     bson (4.2.0)
     builder (3.2.2)
@@ -141,7 +141,7 @@ GEM
       activemodel (~> 5.0)
       mongo (~> 2.3)
     multi_json (1.12.1)
-    multi_xml (0.5.5)
+    multi_xml (0.6.0)
     multipart-post (2.0.0)
     nap (1.1.0)
     naturalsorter (3.0.14)
@@ -173,7 +173,7 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rake (11.3.0)
+    rake (12.0.0)
     rdoc (5.0.0)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
