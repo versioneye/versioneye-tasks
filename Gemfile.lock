@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 7b03f2df8402a7157ee89bd06070b45ca04b6b18
-  tag: v11.0.2
+  revision: 0868e04f76c1f1dbd75e1b947906690d7a404521
+  tag: v11.0.3
   specs:
-    versioneye-core (11.0.2)
+    versioneye-core (11.0.3)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -114,7 +114,7 @@ GEM
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    jeweler (2.3.0)
+    jeweler (2.3.1)
       builder
       bundler (>= 1.0)
       git (>= 1.2.5)
