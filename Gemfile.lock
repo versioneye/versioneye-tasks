@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 43e421883ae88e58c43c93050219e9b457d43670
-  tag: v11.0.4
+  revision: 16cf0931d1205451887f9b4580e187b5db34e13e
+  tag: v11.0.6
   specs:
-    versioneye-core (11.0.4)
+    versioneye-core (11.0.6)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -79,7 +79,7 @@ GEM
       activesupport (>= 4.0.2)
       fuzzy_match (~> 2.0.4)
       nap (~> 1.0)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     dalli (2.7.6)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
