@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: e963e42d18ad0596cc48bccf9c84f3fb4335554d
-  tag: v11.0.7
+  revision: 849412e3d45496fee30a9dac8eb8e92ae11f6814
+  tag: v11.0.9
   specs:
-    versioneye-core (11.0.7)
+    versioneye-core (11.0.9)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -63,13 +63,13 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.0.1)
     ansi (1.5.0)
-    aws-sdk (2.6.42)
-      aws-sdk-resources (= 2.6.42)
-    aws-sdk-core (2.6.42)
+    aws-sdk (2.6.43)
+      aws-sdk-resources (= 2.6.43)
+    aws-sdk-core (2.6.43)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.42)
-      aws-sdk-core (= 2.6.42)
+    aws-sdk-resources (2.6.43)
+      aws-sdk-core (= 2.6.43)
     aws-sigv4 (1.0.0)
     bson (4.2.1)
     builder (3.2.2)
@@ -151,8 +151,8 @@ GEM
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     oauth (0.5.1)
-    oauth2 (1.2.0)
-      faraday (>= 0.8, < 0.10)
+    oauth2 (1.3.0)
+      faraday (>= 0.8, < 0.11)
       jwt (~> 1.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
