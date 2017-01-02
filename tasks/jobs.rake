@@ -70,8 +70,7 @@ namespace :versioneye do
       SendNotificationEmailsProducer.new "send"
     end
 
-    value = '15 7 * * *' if value.to_s.empty?
-    scheduler.cron value do
+    scheduler.every('24h') do
       TeamNotificationService.start( false )
     end
 
