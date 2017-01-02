@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 88f06205a2da0147e6d943fb1559f85d948c0d6a
-  tag: v11.0.13
+  revision: d941062e465ff04864fd6fffd11f110d137dc4c3
+  tag: v11.0.15
   specs:
-    versioneye-core (11.0.13)
+    versioneye-core (11.0.15)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.6.19)
       bundler (~> 1.13.0)
@@ -14,9 +14,9 @@ GIT
       gemnasium-parser (~> 0.1.9)
       httparty (~> 0.14.0)
       mongoid (~> 6.0.0)
-      naturalsorter (~> 3.0.14)
+      naturalsorter (~> 3.0.15)
       net-ldap (~> 0.15.0)
-      nokogiri (~> 1.6.8)
+      nokogiri (~> 1.6.0)
       oauth (~> 0.5.0)
       octokit (~> 4.6.0)
       pdfkit (~> 0.8.2)
@@ -145,7 +145,7 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     nap (1.1.0)
-    naturalsorter (3.0.14)
+    naturalsorter (3.0.15)
     net-ldap (0.15.0)
     netrc (0.11.0)
     nokogiri (1.6.8.1)
@@ -166,7 +166,7 @@ GEM
       httparty (~> 0.9)
       persistent_http (< 2)
     psych (2.2.2)
-    public_suffix (2.0.4)
+    public_suffix (2.0.5)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
