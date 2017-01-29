@@ -11,19 +11,10 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "versioneye-tasks"
-  gem.homepage = "http://github.com/reiz/versioneye-tasks"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "robert.reiz.81@gmail.com"
-  gem.authors = ["reiz"]
-  # dependencies defined in Gemfile
+desc "Open an irb session preloaded with this library"
+task :console do
+  sh "irb -rubygems -I lib -r versioneye-tasks.rb"
 end
-Jeweler::RubygemsDotOrgTasks.new
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
