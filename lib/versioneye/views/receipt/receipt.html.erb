@@ -126,13 +126,7 @@
             </tr>
           <% end %>
           <tr >
-            <td class="left">
-              <%= period_start.strftime("%d. %b %Y") %>
-              <% if !period_start.to_s.eql?(period_end.to_s) %>
-                to <br/>
-                <%= period_end.strftime("%d. %b %Y") %>
-              <% end %>
-            </td>
+            <td class="left"></td>
             <td class="left"></td>
             <td class="right" style="font-weight: bold; border-top: 2px solid black">
               <% if taxable %>
