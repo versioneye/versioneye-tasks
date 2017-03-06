@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: dc54c0ee441e91c56bcefefaa02796c6f42e4efc
-  tag: v11.7.12
+  revision: fb8d68cd2696eb34a825c6b2644d39899aff814f
+  tag: v11.7.13
   specs:
-    versioneye-core (11.7.12)
+    versioneye-core (11.7.13)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.7.2)
       bunny (~> 2.6.0)
@@ -72,7 +72,7 @@ GEM
     aws-sigv4 (1.0.0)
     bson (4.2.1)
     builder (3.2.3)
-    bunny (2.6.3)
+    bunny (2.6.4)
       amq-protocol (>= 2.0.1)
     cocoapods-core (0.39.0)
       activesupport (>= 4.0.2)
