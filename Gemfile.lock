@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: e6b979790a916101f2ad3714acfa5f27fa8ba3aa
-  tag: v11.8.5
+  revision: 6e46aaa0f443d55ee920ab57cf90b078f116b627
+  tag: v11.8.6
   specs:
-    versioneye-core (11.8.5)
+    versioneye-core (11.8.6)
       actionmailer (~> 5.0.1)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.6.0)
@@ -72,8 +72,8 @@ GEM
     aws-sigv4 (1.0.0)
     bson (4.2.1)
     builder (3.2.3)
-    bunny (2.6.4)
-      amq-protocol (>= 2.0.1)
+    bunny (2.6.5)
+      amq-protocol (>= 2.1.0)
     cocoapods-core (0.39.0)
       activesupport (>= 4.0.2)
       fuzzy_match (~> 2.0.4)
@@ -92,8 +92,8 @@ GEM
     gemnasium-parser (0.1.9)
     gene_pool (1.4.1)
       thread_safe
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
     hashr (0.0.22)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
