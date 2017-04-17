@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 66ee7aa6e8fb5b169b2feee44e2d9cd52cda126a
-  tag: v11.8.10
+  revision: 8b0571a6322100628705bd474e5f294baa2eda2b
+  tag: v11.8.11
   specs:
     versioneye-core (11.8.10)
       actionmailer (~> 5.0.1)
@@ -21,7 +21,7 @@ GIT
       pdfkit (~> 0.8.2)
       persistent_httparty (~> 0.1.0)
       semverly (~> 1.0.0)
-      stripe (~> 1.58.0)
+      stripe (~> 2.3.0)
       tire (~> 0.6.2)
       will_paginate_mongoid (= 2.0.1)
       wkhtmltopdf-binary (~> 0.12.3)
@@ -164,8 +164,8 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    stripe (1.58.0)
-      rest-client (>= 1.4, < 4.0)
+    stripe (2.3.0)
+      faraday (~> 0.9)
     thread_safe (0.3.6)
     tire (0.6.2)
       activemodel (>= 3.0)
