@@ -234,6 +234,12 @@ namespace :versioneye do
     GitRepoFileImportWorker.new.work()
   end
 
+  desc "start GitPrWorker"
+  task :git_pr_worker do
+    VersioneyeCore.new
+    GitPrWorker.new.work()
+  end
+
 
   # ***** Common Worker tasks *****
 
