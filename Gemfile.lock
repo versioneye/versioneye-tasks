@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 615a9f5e34e65a5963773b1ad7b1808d59d3f557
-  tag: v11.10.1
+  revision: 0d1f28cd1dce09e2d4eb535fcac37023e685e5af
+  tag: v11.11.2
   specs:
-    versioneye-core (11.10.1)
+    versioneye-core (11.11.2)
       actionmailer (~> 5.1.0)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.6.0)
@@ -63,13 +63,13 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.1.0)
     ansi (1.5.0)
-    aws-sdk (2.9.14)
-      aws-sdk-resources (= 2.9.14)
-    aws-sdk-core (2.9.14)
+    aws-sdk (2.9.16)
+      aws-sdk-resources (= 2.9.16)
+    aws-sdk-core (2.9.16)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.14)
-      aws-sdk-core (= 2.9.14)
+    aws-sdk-resources (2.9.16)
+      aws-sdk-core (= 2.9.16)
     aws-sigv4 (1.0.0)
     bson (4.2.1)
     builder (3.2.3)
@@ -85,7 +85,7 @@ GEM
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.6.0)
-    et-orbi (1.0.3)
+    et-orbi (1.0.4)
       tzinfo
     etcd (0.3.0)
       mixlib-log
@@ -111,7 +111,7 @@ GEM
       mime-types (>= 1.16, < 4)
     mime-types (2.99.3)
     mini_portile2 (2.1.0)
-    minitest (5.10.1)
+    minitest (5.10.2)
     mixlib-log (1.7.1)
     mongo (2.4.1)
       bson (>= 4.2.1, < 5.0.0)
@@ -125,7 +125,7 @@ GEM
     naturalsorter (3.0.16)
     net-ldap (0.16.0)
     netrc (0.11.0)
-    nokogiri (1.7.1)
+    nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     oauth (0.5.1)
     octokit (4.7.0)
@@ -137,7 +137,7 @@ GEM
       httparty (~> 0.9)
       persistent_http (< 2)
     public_suffix (2.0.5)
-    rack (2.0.1)
+    rack (2.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails-dom-testing (2.0.2)
