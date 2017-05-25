@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: b5631e42fa45cf33641d80fe7443639e8ea0d9e0
-  tag: v11.12.13
+  revision: e9070bf88842b1570552f13d83c25fdf1248d24a
+  tag: v11.12.14
   specs:
-    versioneye-core (11.12.13)
+    versioneye-core (11.12.14)
       actionmailer (~> 5.1.0)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.7.0)
@@ -194,7 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.14.6)
+  bundler (~> 1.15.0)
   bunny (~> 2.7.0)
   rufus-scheduler (= 3.4.0)
   shoulda
@@ -202,4 +202,4 @@ DEPENDENCIES
   versioneye-core!
 
 BUNDLED WITH
-   1.14.6
+   1.15.0
