@@ -25,6 +25,10 @@ namespace :versioneye do
       CommonProducer.new "remove_temp_projects"
     end
 
+    scheduler.every('120m') do
+      CommonProducer.new "update_authors"
+    end
+
 
     # -- Daily Jobs -- #
 
@@ -40,10 +44,6 @@ namespace :versioneye do
 
     scheduler.cron '10 1 * * *' do
       CommonProducer.new "update_integration_statuses"
-    end
-
-    scheduler.cron '10 2 * * *' do
-      CommonProducer.new "update_authors"
     end
 
     if env.eql?('production')
