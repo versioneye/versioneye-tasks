@@ -304,5 +304,71 @@ namespace :versioneye do
     SyncWorker.new.work()
   end
 
+  desc "save hooks for old Github hooks"
+  task :save_project_hooks do
+    VersioneyeCore.new
+
+    gh_projects = Project.where(
+      source: Project::A_SOURCE_GITHUB
+    )
+
+    p "save_project_hooks: going to save hook data"
+
+    gh_projects.to_a.each do |project|
+      if Webhook.where(scm: Webhook::A_TYPE_GITHUB, project_id: project.ids).exists?
+        p "save_project_hooks: ignoring #{project.ids}"
+        next
+      end
+
+      owner =  Helpers::get_github_owner(project)
+      if owner.nil?
+        p "save_project_hooks: no owner with Github access for project.#{project}"
+        next
+      end
+
+      hooks = GithubWebhook.fetch_repo_hooks(project[:scm_fullname], owner.github_token).to_a
+      veye_hook = Helpers::only_versioneye_hook(hooks)
+      if only_veye_hook.nil?
+        p "registering a new hook for project.#{project.ids} => #{project[:scm_fullname]}"
+        api_key = owner
+        GithubWebhook.create_project_hook(
+          project[:scm_fullname],
+          project_id,
+          owner.api.api_key,
+          owner.github_token
+        )
+      else
+        p  "saving existing hook data into our database"
+        GithubWebhook.upsert_project_webhook(veye_hook, project[:scm_fullname], project.ids)
+      end
+
+    end
+  end
+
+  class Helpers
+    def self.only_versioneye_hook(hooks)
+      hooks.to_a.keep_if do |hook|
+        /versioneye\.com/.match? hook[:config][:url]
+      end.first
+    end
+
+    # returns first user or team member who has github token
+    def self.get_github_owner(project)
+      user = User.where(id: project.user_id).first
+      return user if user.github_token and project.is_collaborator?(user)
+
+      owner = nil
+      project.teams.to_a.each do |team|
+        team.members.to_a.each do |tm|
+          owner = tm.user if tm.user.github_token.to_s.size > 0
+          break if owner
+        end
+
+        break if owner
+      end
+
+      owner
+    end
+  end
 
 end
