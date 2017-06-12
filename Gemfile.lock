@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: b0aab90adaa51c4e4a608bf30ee5e7fe8c79ddc7
-  tag: v12.4.2
+  revision: 6302401bbf4ebcf804a22faf97bbc0c5719eeb9d
+  tag: v12.5.6
   specs:
-    versioneye-core (12.4.2)
+    versioneye-core (12.5.6)
       actionmailer (~> 5.1.0)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.7.0)
@@ -12,10 +12,10 @@ GIT
       etcd (~> 0.3.0)
       gemnasium-parser (~> 0.1.9)
       httparty (~> 0.15.4)
-      mongoid (~> 6.1.0)
+      mongoid (~> 6.2.0)
       naturalsorter (~> 3.0.16)
       net-ldap (~> 0.16.0)
-      nokogiri (~> 1.7.1)
+      nokogiri (~> 1.8.0)
       oauth (~> 0.5.0)
       octokit (~> 4.7.0)
       pdfkit (~> 0.8.2)
@@ -110,13 +110,13 @@ GEM
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
     mime-types (2.99.3)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.2.0)
     minitest (5.10.2)
     mixlib-log (1.7.1)
     mongo (2.4.2)
       bson (>= 4.2.1, < 5.0.0)
-    mongoid (6.1.1)
-      activemodel (~> 5.0)
+    mongoid (6.2.0)
+      activemodel (~> 5.1)
       mongo (>= 2.4.1, < 3.0.0)
     multi_json (1.12.1)
     multi_xml (0.6.0)
@@ -125,8 +125,8 @@ GEM
     naturalsorter (3.0.16)
     net-ldap (0.16.0)
     netrc (0.11.0)
-    nokogiri (1.7.2)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
     oauth (0.5.3)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
