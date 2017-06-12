@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: a81f078c999d2cac0c80dcae50b611eda1f2516b
-  tag: v12.4.1
+  revision: b0aab90adaa51c4e4a608bf30ee5e7fe8c79ddc7
+  tag: v12.4.2
   specs:
-    versioneye-core (12.4.1)
+    versioneye-core (12.4.2)
       actionmailer (~> 5.1.0)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.7.0)
@@ -63,13 +63,13 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.2.0)
     ansi (1.5.0)
-    aws-sdk (2.9.36)
-      aws-sdk-resources (= 2.9.36)
-    aws-sdk-core (2.9.36)
+    aws-sdk (2.9.37)
+      aws-sdk-resources (= 2.9.37)
+    aws-sdk-core (2.9.37)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.36)
-      aws-sdk-core (= 2.9.36)
+    aws-sdk-resources (2.9.37)
+      aws-sdk-core (= 2.9.37)
     aws-sigv4 (1.0.0)
     bson (4.2.1)
     builder (3.2.3)
@@ -107,7 +107,7 @@ GEM
     json (2.1.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.5)
+    mail (2.6.6)
       mime-types (>= 1.16, < 4)
     mime-types (2.99.3)
     mini_portile2 (2.1.0)
