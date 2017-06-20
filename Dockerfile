@@ -1,4 +1,4 @@
-FROM        versioneye/ruby-base:2.4.25
+FROM        versioneye/ruby-base:2.4.26
 MAINTAINER  Robert Reiz <reiz@versioneye.com>
 
 ENV RAILS_ENV enterprise
