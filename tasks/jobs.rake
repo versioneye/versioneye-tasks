@@ -70,7 +70,9 @@ namespace :versioneye do
       SendNotificationEmailsProducer.new "send"
     end
 
-    scheduler.every('24h') do
+    value = GlobalSetting.get(env, 'schedule_team_notifications')
+    value = '50 7 * * *' if value.to_s.empty?
+    scheduler.cron value do
       TeamNotificationService.start( false )
     end
 
