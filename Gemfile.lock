@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 6031459b5944016c14e4e5e636ab96d4148b89ff
-  tag: v12.6.2
+  revision: e9b0d6754e1843cf3a833e7b1bd72c9a86d572da
+  tag: v12.6.5
   specs:
-    versioneye-core (12.6.2)
+    versioneye-core (12.6.5)
       actionmailer (~> 5.1.0)
       aws-sdk (~> 2.9.1)
       bunny (~> 2.7.0)
@@ -84,7 +84,7 @@ GEM
     docile (1.1.5)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
-    erubi (1.6.0)
+    erubi (1.6.1)
     et-orbi (1.0.5)
       tzinfo
     etcd (0.3.0)
