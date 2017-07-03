@@ -87,8 +87,14 @@ namespace :versioneye do
       end
     end
 
+    # Every Tuesday at 12:21.
     scheduler.cron '21 12 * * 2' do
       CommonProducer.new "update_distinct_languages"
+    end
+
+    # Every Monday at 02:10.
+    scheduler.cron '10 2 * * 1' do
+      CommonProducer.new "remove_broken_projects"
     end
 
     scheduler.join
