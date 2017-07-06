@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/versioneye/versioneye-core.git
-  revision: 240a82bf3ece8abb863087df2d6fd11e7f09797f
-  tag: v12.6.17
+  revision: 90e00d3704c0900d836d0b6d583994dfff8edf6f
+  tag: v12.6.23
   specs:
-    versioneye-core (12.6.17)
+    versioneye-core (12.6.22)
       actionmailer (~> 5.1.0)
-      aws-sdk (~> 2.9.1)
+      aws-sdk (~> 2.10.7)
       bunny (~> 2.7.0)
       cocoapods-core (~> 0.39.0)
       dalli (~> 2.7.6)
@@ -63,15 +63,15 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     amq-protocol (2.2.0)
     ansi (1.5.0)
-    aws-sdk (2.9.44)
-      aws-sdk-resources (= 2.9.44)
-    aws-sdk-core (2.9.44)
+    aws-sdk (2.10.8)
+      aws-sdk-resources (= 2.10.8)
+    aws-sdk-core (2.10.8)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.44)
-      aws-sdk-core (= 2.9.44)
+    aws-sdk-resources (2.10.8)
+      aws-sdk-core (= 2.10.8)
     aws-sigv4 (1.0.0)
-    bson (4.2.1)
+    bson (4.2.2)
     builder (3.2.3)
     bunny (2.7.0)
       amq-protocol (>= 2.2.0)
