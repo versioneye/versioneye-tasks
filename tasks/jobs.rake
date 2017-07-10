@@ -93,9 +93,9 @@ namespace :versioneye do
     end
 
     # Every Monday at 02:10.
-    scheduler.cron '10 2 * * 1' do
-      CommonProducer.new "remove_broken_projects"
-    end
+    # scheduler.cron '10 2 * * 1' do
+    #   CommonProducer.new "remove_broken_projects"
+    # end
 
     scheduler.join
 
