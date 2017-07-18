@@ -305,6 +305,12 @@ namespace :versioneye do
     DependencyBadgeWorker.new.work()
   end
 
+  desc "start InventoryWorker "
+  task :inventory_worker do
+    VersioneyeCore.new
+    InventoryWorker.new.work()
+  end
+
 
   desc "start SyncWorker "
   task :sync_worker do
