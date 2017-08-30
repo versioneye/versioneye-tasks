@@ -10,14 +10,11 @@ namespace :versioneye do
     scheduler = Rufus::Scheduler.new
 
 
-    # Every 5 minutes
-    scheduler.every('5m') do
-      UpdateIndexProducer.new("user")
-    end
-
     # Every 10 minutes
-    scheduler.every('10m') do
-      UpdateIndexProducer.new("product")
+    if !env.eql?('enterprise')
+      scheduler.every('10m') do
+        UpdateIndexProducer.new("product")
+      end
     end
 
     # Every 5 minutes
@@ -32,6 +29,7 @@ namespace :versioneye do
 
     # -- Daily Jobs -- #
 
+    # Create or update indexes on MongoDB
     scheduler.cron '1 1 * * *' do
       CommonProducer.new "create_indexes"
     end
